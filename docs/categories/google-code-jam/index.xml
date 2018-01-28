@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Code Jam on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/categories/google-code-jam/</link>
+    <description>Recent content in Google Code Jam on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jan 2018 21:34:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://andychen841210.github.io/codingBlog/categories/google-code-jam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GCJ2017QualificationRoundB</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/</link>
+      <pubDate>Sun, 28 Jan 2018 21:34:41 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/</guid>
+      <description>Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整</description>
+    </item>
+    
+    <item>
+      <title>GCJ2017QualificationRoundA</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/</link>
+      <pubDate>Sun, 28 Jan 2018 21:34:29 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/</guid>
+      <description>Oversized Pancake Flipper Abridge problem statement 字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字</description>
+    </item>
+    
+  </channel>
+</rss>

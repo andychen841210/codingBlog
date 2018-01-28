@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dp on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/tags/dp/</link>
+    <description>Recent content in Dp on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jan 2018 21:27:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://andychen841210.github.io/codingBlog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Round422ABCD</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round422abcd/</link>
+      <pubDate>Sun, 28 Jan 2018 21:27:16 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round422abcd/</guid>
+      <description>Codeforces Round422 Division 2 A Abridge problem statement 給定 A 跟 B，問 A! 跟 B! 的最大公因數，min(A, B) &amp;lt;= 12 Solution sketch 取 min(A, B) 直接坐階乘 AC code #include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; int main(){ long long int a, b, ans = 1; scanf(&amp;quot; %lld %lld&amp;quot;, &amp;amp;a, &amp;amp;b); for (long long int</description>
+    </item>
+    
+  </channel>
+</rss>

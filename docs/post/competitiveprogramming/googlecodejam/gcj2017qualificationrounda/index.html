@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Round410ABC - Coding Blog</title>
+  <title>GCJ2017QualificationRoundA - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了" />
+  <meta name="description" content="Oversized Pancake Flipper Abridge problem statement 字串只包含 -, &#43;，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 &#43;，&#43; 變成 -。請問最少要反轉幾次才能使整個字" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -29,7 +29,7 @@
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -47,19 +47,15 @@
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Round410ABC" />
-<meta property="og:description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了" />
+<meta property="og:title" content="GCJ2017QualificationRoundA" />
+<meta property="og:description" content="Oversized Pancake Flipper Abridge problem statement 字串只包含 -, &#43;，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 &#43;，&#43; 變成 -。請問最少要反轉幾次才能使整個字" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/" />
 
 
 
-<meta property="article:published_time" content="2018-01-28T21:27:07&#43;08:00"/>
-<meta property="article:modified_time" content="2018-01-28T21:27:07&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2018-01-28T21:34:29&#43;08:00"/>
+<meta property="article:modified_time" content="2018-01-28T21:34:29&#43;08:00"/>
 
 
 
@@ -67,18 +63,22 @@
 
 
 
-<meta itemprop="name" content="Round410ABC">
-<meta itemprop="description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了">
-
-
-<meta itemprop="dateModified" content="2018-01-28T21:27:07&#43;08:00" />
-<meta itemprop="wordCount" content="581">
 
 
 
-<meta itemprop="keywords" content="Math,String," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round410ABC"/>
-<meta name="twitter:description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了"/>
+
+<meta itemprop="name" content="GCJ2017QualificationRoundA">
+<meta itemprop="description" content="Oversized Pancake Flipper Abridge problem statement 字串只包含 -, &#43;，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 &#43;，&#43; 變成 -。請問最少要反轉幾次才能使整個字">
+
+
+<meta itemprop="dateModified" content="2018-01-28T21:34:29&#43;08:00" />
+<meta itemprop="wordCount" content="208">
+
+
+
+<meta itemprop="keywords" content="Greedy," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="GCJ2017QualificationRoundA"/>
+<meta name="twitter:description" content="Oversized Pancake Flipper Abridge problem statement 字串只包含 -, &#43;，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 &#43;，&#43; 變成 -。請問最少要反轉幾次才能使整個字"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -141,7 +141,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Round410ABC</h1>
+      <h1 class="post-title">GCJ2017QualificationRoundA</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2018-01-28 </span>
@@ -149,13 +149,11 @@
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
             
-              <a href="/codingBlog/categories/codeforces/"> Codeforces </a>
-            
-              <a href="/codingBlog/categories/division-2/"> Division 2 </a>
+              <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
             
           </div>
-        <span class="more-meta"> 581 word </span>
-        <span class="more-meta"> 2 min read </span>
+        <span class="more-meta"> 208 word </span>
+        <span class="more-meta"> 1 min read </span>
         
       </div>
     </header>
@@ -170,24 +168,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#codeforces-round410-division-2-http-codeforces-com-contest-798"><a href="http://codeforces.com/contest/798">Codeforces Round410 Division 2</a></a></li>
-<li><a href="#a">A</a>
+<li><a href="#oversized-pancake-flipper-https-code-google-com-codejam-contest-3264486-dashboard-s-p0"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p0">Oversized Pancake Flipper</a></a>
 <ul>
 <li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
 <li><a href="#solution-sketch">Solution sketch</a></li>
 <li><a href="#ac-code">AC code</a></li>
-</ul></li>
-<li><a href="#b">B</a>
-<ul>
-<li><a href="#abridge-problem-statement-1">Abridge problem statement</a></li>
-<li><a href="#solution-sketch-1">Solution sketch</a></li>
-<li><a href="#ac-code-1">AC code</a></li>
-</ul></li>
-<li><a href="#c">C</a>
-<ul>
-<li><a href="#abridge-problem-statement-2">Abridge problem statement</a></li>
-<li><a href="#solution-sketch-2">Solution sketch</a></li>
-<li><a href="#ac-code-2">AC code</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -199,127 +184,66 @@
     <div class="post-content">
       
 
-<h2 id="codeforces-round410-division-2-http-codeforces-com-contest-798"><a href="http://codeforces.com/contest/798">Codeforces Round410 Division 2</a></h2>
-
-<h2 id="a">A</h2>
+<h2 id="oversized-pancake-flipper-https-code-google-com-codejam-contest-3264486-dashboard-s-p0"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p0">Oversized Pancake Flipper</a></h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
-<p>給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文</p>
+<p>字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字串變成全部都為 +。</p>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了話，若字串長度為偶數了話答案為 NO，因為一定要換一個字</p>
+<p>直接轉</p>
 
 <!-- more -->
 
 <h3 id="ac-code">AC code</h3>
 
-<pre><code class="language-python">s = input()
-l = 0
-r = len(s) - 1
-cnt = 0
-while l &lt; r:
-	if s[l] != s[r]:
-		cnt += 1
-	l += 1
-	r -= 1
-if cnt == 0:
-	if len(s) % 2 == 1:
-		cnt = 1
-if cnt == 1:
-	print(&quot;YES&quot;)
-else:
-	print(&quot;NO&quot;)
-</code></pre>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
 
-<h2 id="b">B</h2>
+int k;
+char s[10000];
 
-<h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
+int main(){
+	int T;
+	scanf(&quot; %d&quot;, &amp;T);
+	
+	for (int t = 0; t &lt; T; t++){
+		int a[10000] = {0};
 
-<p>給定 n 個字串，問說最少要動幾步讓每個字串都變成一樣，若沒辦法讓每個字串都變成一樣，則輸出 -1</p>
+		scanf(&quot; %s&quot;, s);
+		scanf(&quot; %d&quot;, &amp;k);
+		
+		int ans = 0, l = strlen(s);
+		for (int i = 0; i &lt; l; i++){
+			if (s[i] == '-'){
+				if (i + k &gt; l)
+					continue;
+				for (int j = i; j &lt; i + k; j++){
+					if (s[j] == '+')
+						s[j] = '-';
+					else
+						s[j] = '+';
+				}
+				ans++;
+			}
+		}
 
-<h3 id="solution-sketch-1">Solution sketch</h3>
+		for (int i = 0; i &lt; l; i++){
+			if (s[i] == '-'){
+				ans = -1;
+				break;
+			}
+		}
 
-<p>讓每個字串都當最終字串直接做，然後找最少的</p>
-
-<!-- more -->
-
-<h3 id="ac-code-1">AC code</h3>
-
-<pre><code class="language-python">n = int(input())
-a = []
-ans = 1000000
-for i in range(0, n):
-	s = input()
-	a.append(s)
-for i in range(0, n):
-	cnt = 0
-	for j in range(0, n):
-		if i == j:
-			continue
-		for k in range(0, len(a[i])):
-			ch = True
-			for l in range(0, len(a[i])):
-				if a[i][l] != a[j][(k + l) % len(a[i])]:
-					ch = False
-					break
-			if k == len(a[i]) - 1 and ch == False:
-				print(-1)
-				exit(0)
-			if ch:
-				cnt += k
-				break
-	ans = min(ans, cnt)
-print(ans)
-</code></pre>
-
-<h2 id="c">C</h2>
-
-<h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
-
-<p>給定一堆數字，問說最少動幾步讓所有數字的 gcd &gt; 1，若有答案了話，輸出 YES 跟最少的步數，若沒有了話，則輸出 NO，將 ai 跟 ai+1 變成 ai - ai + 1 跟 ai + ai+1，視為動一步</p>
-
-<h3 id="solution-sketch-2">Solution sketch</h3>
-
-<p>觀察一下會發現，其實答案中不會出現 NO，這個答案，接著若全部都為偶數，則沒有問題，若序列上出現連續兩個奇數了話，則需做一次操作讓他們都變成偶數，若一奇一偶，則須做兩次操作讓他們都變成偶數</p>
-
-<p>需注意，若一開始 gcd 就大於 1 了話，則直接輸出答案</p>
-
-<!-- more -->
-
-<h3 id="ac-code-2">AC code</h3>
-
-<pre><code class="language-python">def gcd (a, b):
-	while b:
-		temp = a % b
-		a = b
-		b = temp
-	return a
-
-n = int(input())
-a = list(map(int, input().split()))
-ans = 0
-g = a[0]
-
-for i in range(1, n):
-	g = gcd(g, a[i])
-	if a[i] % 2 != 0:
-		if a[i - 1] % 2 != 0:
-			ans += 1
-			a[i] = 2
-			a[i - 1] = 2
-
-for i in a:
-	if i % 2 != 0:
-		ans += 2
-
-print(&quot;YES&quot;)
-
-if g &gt; 1:
-	print(0)
-else:
-	print(ans)
+		
+		if (ans == -1)
+			printf(&quot;Case #%d: IMPOSSIBLE\n&quot;, t + 1);
+		else
+			printf(&quot;Case #%d: %d\n&quot;, t + 1, ans);
+	}
+	return 0;
+}
 </code></pre>
 
     </div>
@@ -348,23 +272,21 @@ else:
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/math/">Math</a>
-          
-          <a href="/codingBlog/tags/string/">String</a>
+          <a href="/codingBlog/tags/greedy/">Greedy</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round422abcd/">
+          <a class="prev" href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round422ABCD</span>
+            <span class="prev-text nav-default">GCJ2017QualificationRoundB</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round411abcd/">
-            <span class="next-text nav-default">Round411ABCD</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/poj/poj1511/">
+            <span class="next-text nav-default">POJ1511</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

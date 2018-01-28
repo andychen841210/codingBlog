@@ -3,15 +3,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://andychen841210.github.io/codingBlog/tags/apcs/</loc>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://andychen841210.github.io/codingBlog/tags/binary-search/</loc>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/</loc>
+    <lastmod>2018-01-28T21:34:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/poj/poj1511/</loc>
+    <lastmod>2018-01-28T21:32:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round422abcd/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/</loc>
+    <lastmod>2018-01-28T21:27:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round411abcd/</loc>
+    <lastmod>2018-01-28T21:25:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -21,37 +51,99 @@
   </url>
   
   <url>
-    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/</loc>
+    <loc>https://andychen841210.github.io/codingBlog/categories/codeforces/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/categories/competitive-programming/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://andychen841210.github.io/codingBlog/tags/implementation/</loc>
+    <loc>https://andychen841210.github.io/codingBlog/categories/division-2/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/dp/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/categories/google-code-jam/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/greedy/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/math/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/categories/poj/</loc>
+    <lastmod>2018-01-28T21:32:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/post/</loc>
+    <lastmod>2018-01-28T21:34:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/segment-tree/</loc>
+    <lastmod>2018-01-28T21:32:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/string/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/sweep-line/</loc>
+    <lastmod>2018-01-28T21:32:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/</loc>
+    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
