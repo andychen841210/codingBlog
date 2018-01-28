@@ -72,7 +72,7 @@
 
 
 <meta itemprop="dateModified" content="2018-01-28T21:34:41&#43;08:00" />
-<meta itemprop="wordCount" content="499">
+<meta itemprop="wordCount" content="496">
 
 
 
@@ -152,7 +152,7 @@
               <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
             
           </div>
-        <span class="more-meta"> 499 word </span>
+        <span class="more-meta"> 496 word </span>
         <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -192,10 +192,13 @@
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>可觀察出一些特性:
-1. 若 N 本身就是 tidy，就答案就是 N
-2. 否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
-3. 最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</p>
+<p>可觀察出一些特性:</p>
+
+<ol>
+<li>若 N 本身就是 tidy，就答案就是 N</li>
+<li>否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9</li>
+<li>最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</li>
+</ol>
 
 <!-- more -->
 
@@ -400,13 +403,6 @@ int main(){
   </script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-81902328-2', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
