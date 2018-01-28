@@ -18,7 +18,7 @@ categories: ["Competitive Programming", "Codeforces", "Division 2"]
 
 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了話，若字串長度為偶數了話答案為 NO，因為一定要換一個字
 
-<!-- more -->
+<!--more-->
 
 ### AC code
 ```python

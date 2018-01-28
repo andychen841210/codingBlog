@@ -16,7 +16,7 @@ categories: ["Competitive Programming", "Google Code Jam"]
 
 直接轉
 
-<!-- more -->
+<!--more-->
 
 ### AC code
 ```cpp

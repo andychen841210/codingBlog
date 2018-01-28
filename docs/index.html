@@ -147,14 +147,30 @@
             <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
           
         </div>
-      <span class="more-meta"> 496 word </span>
+      <span class="more-meta"> 497 word </span>
       <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整
+      <h2 id="tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>可觀察出一些特性:</p>
+
+<ol>
+<li>若 N 本身就是 tidy，就答案就是 N</li>
+<li>否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9</li>
+<li>最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</li>
+</ol>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/" class="read-more-link">Read more..</a>
@@ -175,14 +191,24 @@
             <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
           
         </div>
-      <span class="more-meta"> 208 word </span>
+      <span class="more-meta"> 215 word </span>
       <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Oversized Pancake Flipper Abridge problem statement 字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字
+      <h2 id="oversized-pancake-flipper-https-code-google-com-codejam-contest-3264486-dashboard-s-p0"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p0">Oversized Pancake Flipper</a></h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字串變成全部都為 +。</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>直接轉</p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/" class="read-more-link">Read more..</a>
@@ -210,7 +236,17 @@
   
   <div class="post-content">
     <div class="post-summary">
-      Atlantis Abridge problem statement 給定平面上 N 個矩形，求這些矩形覆蓋的面積。 Solution sketch 原理參考這 AC code #include &lt;cstdio&gt; #include &lt;vector&gt; #include &lt;cmath&gt; #include &lt;cstring&gt; #include &lt;algorithm&gt; using namespace std; // 矩形面積 const int MAX_NN = (1 &lt;&lt; 17); struct Rect{ double x1, y1, x2, y2; }; struct Event{ double
+      <h2 id="atlantis-http-poj-org-problem-id-1151"><a href="http://poj.org/problem?id=1151">Atlantis</a></h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定平面上 N 個矩形，求這些矩形覆蓋的面積。</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>原理參考<a href="https://amoshyc.github.io/blog/template-ju-xing-mian-ji-he.html"> 這</a></p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/poj/poj1511/" class="read-more-link">Read more..</a>
@@ -240,7 +276,19 @@
   
   <div class="post-content">
     <div class="post-summary">
-      Codeforces Round422 Division 2 A Abridge problem statement 給定 A 跟 B，問 A! 跟 B! 的最大公因數，min(A, B) &lt;= 12 Solution sketch 取 min(A, B) 直接坐階乘 AC code #include &lt;bits/stdc++.h&gt; using namespace std; int main(){ long long int a, b, ans = 1; scanf(&quot; %lld %lld&quot;, &amp;a, &amp;b); for (long long int
+      <h2 id="codeforces-round422-division-2-http-codeforces-com-contest-822"><a href="http://codeforces.com/contest/822">Codeforces Round422 Division 2</a></h2>
+
+<h2 id="a">A</h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定 A 跟 B，問 A! 跟 B! 的最大公因數，min(A, B) &lt;= 12</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>取 min(A, B) 直接坐階乘</p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/codeforces/round422abcd/" class="read-more-link">Read more..</a>
@@ -263,14 +311,26 @@
             <a href="/codingBlog/categories/division-2/"> Division 2 </a>
           
         </div>
-      <span class="more-meta"> 581 word </span>
+      <span class="more-meta"> 596 word </span>
       <span class="more-meta"> 2 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了
+      <h2 id="codeforces-round410-division-2-http-codeforces-com-contest-798"><a href="http://codeforces.com/contest/798">Codeforces Round410 Division 2</a></h2>
+
+<h2 id="a">A</h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了話，若字串長度為偶數了話答案為 NO，因為一定要換一個字</p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/codeforces/round410abc/" class="read-more-link">Read more..</a>
@@ -293,14 +353,26 @@
             <a href="/codingBlog/categories/division-2/"> Division 2 </a>
           
         </div>
-      <span class="more-meta"> 635 word </span>
+      <span class="more-meta"> 641 word </span>
       <span class="more-meta"> 2 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外 Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，
+      <h2 id="codeforces-round411-division-2-http-codeforces-com-contest-805"><a href="http://codeforces.com/contest/805">Codeforces Round411 Division 2</a></h2>
+
+<h2 id="a">A</h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可</p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/codeforces/round411abcd/" class="read-more-link">Read more..</a>

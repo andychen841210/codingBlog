@@ -17,7 +17,23 @@
       <pubDate>Sun, 28 Jan 2018 21:34:41 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/</guid>
-      <description>Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整</description>
+      <description>&lt;h2 id=&#34;tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1&#34;&gt;&lt;a href=&#34;https://code.google.com/codejam/contest/3264486/dashboard#s=p1&#34;&gt;Tidy Numbers&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;可觀察出一些特性:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;若 N 本身就是 tidy，就答案就是 N&lt;/li&gt;
+&lt;li&gt;否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9&lt;/li&gt;
+&lt;li&gt;最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +42,17 @@
       <pubDate>Sun, 28 Jan 2018 21:34:29 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/</guid>
-      <description>Oversized Pancake Flipper Abridge problem statement 字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字</description>
+      <description>&lt;h2 id=&#34;oversized-pancake-flipper-https-code-google-com-codejam-contest-3264486-dashboard-s-p0&#34;&gt;&lt;a href=&#34;https://code.google.com/codejam/contest/3264486/dashboard#s=p0&#34;&gt;Oversized Pancake Flipper&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;字串只包含 -, +，定義一次反轉代表將 S 中一個（連續）長度為 K 的區間中的字元反轉：- 變成 +，+ 變成 -。請問最少要反轉幾次才能使整個字串變成全部都為 +。&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;直接轉&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

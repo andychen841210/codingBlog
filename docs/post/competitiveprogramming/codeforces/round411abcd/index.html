@@ -17,7 +17,10 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外 Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，" />
+  <meta name="description" content="Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外
+Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可
+
+" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -48,7 +51,19 @@
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 <meta property="og:title" content="Round411ABCD" />
-<meta property="og:description" content="Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外 Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，" />
+<meta property="og:description" content="Codeforces Round411 Division 2
+
+A
+
+Abridge problem statement
+
+給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外
+
+Solution sketch
+
+若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可
+
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round411abcd/" />
 
@@ -68,17 +83,41 @@
 
 
 <meta itemprop="name" content="Round411ABCD">
-<meta itemprop="description" content="Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外 Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，">
+<meta itemprop="description" content="Codeforces Round411 Division 2
+
+A
+
+Abridge problem statement
+
+給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外
+
+Solution sketch
+
+若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可
+
+">
 
 
 <meta itemprop="dateModified" content="2018-01-28T21:25:10&#43;08:00" />
-<meta itemprop="wordCount" content="635">
+<meta itemprop="wordCount" content="641">
 
 
 
 <meta itemprop="keywords" content="Math,String," />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round411ABCD"/>
-<meta name="twitter:description" content="Codeforces Round411 Division 2 A Abridge problem statement 給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外 Solution sketch 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，"/>
+<meta name="twitter:description" content="Codeforces Round411 Division 2
+
+A
+
+Abridge problem statement
+
+給定 l 跟 r，問哪個數字可以在這個區間中整除最多的數字，數字 1 除外
+
+Solution sketch
+
+若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -154,7 +193,7 @@
               <a href="/codingBlog/categories/division-2/"> Division 2 </a>
             
           </div>
-        <span class="more-meta"> 635 word </span>
+        <span class="more-meta"> 641 word </span>
         <span class="more-meta"> 2 min read </span>
         
       </div>
@@ -203,9 +242,7 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="codeforces-round411-division-2-http-codeforces-com-contest-805"><a href="http://codeforces.com/contest/805">Codeforces Round411 Division 2</a></h2>
+      <h2 id="codeforces-round411-division-2-http-codeforces-com-contest-805"><a href="http://codeforces.com/contest/805">Codeforces Round411 Division 2</a></h2>
 
 <h2 id="a">A</h2>
 
@@ -217,7 +254,7 @@
 
 <p>若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可</p>
 
-<!-- more -->
+<p></p>
 
 <h3 id="ac-code">AC code</h3>
 
@@ -315,7 +352,6 @@ for i in inp[::-1]:
 		cnt_b = (cnt_b * 2) % mod
 print(ans)
 </code></pre>
-
     </div>
 
     

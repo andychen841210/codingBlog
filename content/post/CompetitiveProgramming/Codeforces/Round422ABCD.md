@@ -18,7 +18,7 @@ categories: ["Competitive Programming", "Codeforces", "Division 2"]
 
 取 min(A, B) 直接坐階乘
 
-<!-- more -->
+<!--more-->
 
 ### AC code
 ```cpp

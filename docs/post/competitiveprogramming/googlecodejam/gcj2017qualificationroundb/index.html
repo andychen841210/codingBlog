@@ -17,7 +17,10 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整" />
+  <meta name="description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+Solution sketch 可觀察出一些特性:
+ 若 N 本身就是 tidy，就答案就是 N 否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9 最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉  
+" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -48,7 +51,23 @@
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 <meta property="og:title" content="GCJ2017QualificationRoundB" />
-<meta property="og:description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整" />
+<meta property="og:description" content="Tidy Numbers
+
+Abridge problem statement
+
+定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+
+Solution sketch
+
+可觀察出一些特性:
+
+
+若 N 本身就是 tidy，就答案就是 N
+否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
+最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
+
+
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/" />
 
@@ -68,17 +87,49 @@
 
 
 <meta itemprop="name" content="GCJ2017QualificationRoundB">
-<meta itemprop="description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整">
+<meta itemprop="description" content="Tidy Numbers
+
+Abridge problem statement
+
+定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+
+Solution sketch
+
+可觀察出一些特性:
+
+
+若 N 本身就是 tidy，就答案就是 N
+否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
+最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
+
+
+">
 
 
 <meta itemprop="dateModified" content="2018-01-28T21:34:41&#43;08:00" />
-<meta itemprop="wordCount" content="496">
+<meta itemprop="wordCount" content="497">
 
 
 
 <meta itemprop="keywords" content="Greedy," />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="GCJ2017QualificationRoundB"/>
-<meta name="twitter:description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整"/>
+<meta name="twitter:description" content="Tidy Numbers
+
+Abridge problem statement
+
+定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+
+Solution sketch
+
+可觀察出一些特性:
+
+
+若 N 本身就是 tidy，就答案就是 N
+否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
+最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
+
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -152,7 +203,7 @@
               <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
             
           </div>
-        <span class="more-meta"> 496 word </span>
+        <span class="more-meta"> 497 word </span>
         <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -182,9 +233,7 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></h2>
+      <h2 id="tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
@@ -200,7 +249,7 @@
 <li>最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</li>
 </ol>
 
-<!-- more -->
+<p></p>
 
 <h3 id="ac-code">AC code</h3>
 
@@ -289,7 +338,6 @@ int main(){
 	return 0;
 }
 </code></pre>
-
     </div>
 
     

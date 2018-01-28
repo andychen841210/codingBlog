@@ -18,7 +18,7 @@ categories: ["Competitive Programming", "Codeforces", "Division 2"]
 
 若 r - l 大於等於 1 了話，則表示每多兩個數就會有一個偶數，因此，這時候 2 會是可以整除最多的，否則了話 r - l 則為 0，因此輸出 r 或 l 即可
 
-<!-- more -->
+<!--more-->
 
 ### AC code
 ```python
