@@ -1,11 +1,10 @@
 ---
-title: Codeforces Round410 Div2
-date:
+title: "Round410ABC"
+date: 2018-01-28T21:27:07+08:00
 draft: false
-
-lastmod:
-tags: ["APCS", "Binary search", "Implementation"]
-categories: ["Competitive Programming"]
+lastmod: 2018-01-28T21:27:07+08:00
+tags: ["Math", "String"]
+categories: ["Competitive Programming", "Codeforces", "Division 2"]
 ---
 ## [Codeforces Round410 Division 2](http://codeforces.com/contest/798)
 
