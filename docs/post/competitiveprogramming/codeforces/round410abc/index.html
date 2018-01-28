@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Codeforces Round410 Div2 - Coding Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="andychen" />
+  <meta name="description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+<meta name="google-site-verification" content="FuwyG1La_DaZH-n3M2NtQYJYF5GYtRVtthFpCVWuoaU" />
+
+
+<meta name="generator" content="Hugo 0.29" />
+
+
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/codingBlog/favicon-16x16.png">
+<link rel="icon" href="/codingBlog/favicon.ico" />
+<link rel="manifest" href="/codingBlog/manifest.json">
+<link rel="mask-icon" href="/codingBlog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="Codeforces Round410 Div2" />
+<meta property="og:description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Codeforces Round410 Div2">
+<meta itemprop="description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了">
+
+
+
+<meta itemprop="wordCount" content="581">
+
+
+
+<meta itemprop="keywords" content="APCS,Binary search,Implementation," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Codeforces Round410 Div2"/>
+<meta name="twitter:description" content="Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/codingBlog/" class="logo">Coding Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/codingBlog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/codingBlog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/codingBlog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/codingBlog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/codingBlog/" class="logo">Coding Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Codeforces Round410 Div2</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        <div class="post-category">
+            
+              <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
+            
+          </div>
+        <span class="more-meta"> 约 581 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#codeforces-round410-division-2-http-codeforces-com-contest-798"><a href="http://codeforces.com/contest/798">Codeforces Round410 Division 2</a></a></li>
+<li><a href="#a">A</a>
+<ul>
+<li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
+<li><a href="#solution-sketch">Solution sketch</a></li>
+<li><a href="#ac-code">AC code</a></li>
+</ul></li>
+<li><a href="#b">B</a>
+<ul>
+<li><a href="#abridge-problem-statement-1">Abridge problem statement</a></li>
+<li><a href="#solution-sketch-1">Solution sketch</a></li>
+<li><a href="#ac-code-1">AC code</a></li>
+</ul></li>
+<li><a href="#c">C</a>
+<ul>
+<li><a href="#abridge-problem-statement-2">Abridge problem statement</a></li>
+<li><a href="#solution-sketch-2">Solution sketch</a></li>
+<li><a href="#ac-code-2">AC code</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h2 id="codeforces-round410-division-2-http-codeforces-com-contest-798"><a href="http://codeforces.com/contest/798">Codeforces Round410 Division 2</a></h2>
+
+<h2 id="a">A</h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了話，若字串長度為偶數了話答案為 NO，因為一定要換一個字</p>
+
+<!-- more -->
+
+<h3 id="ac-code">AC code</h3>
+
+<pre><code class="language-python">s = input()
+l = 0
+r = len(s) - 1
+cnt = 0
+while l &lt; r:
+	if s[l] != s[r]:
+		cnt += 1
+	l += 1
+	r -= 1
+if cnt == 0:
+	if len(s) % 2 == 1:
+		cnt = 1
+if cnt == 1:
+	print(&quot;YES&quot;)
+else:
+	print(&quot;NO&quot;)
+</code></pre>
+
+<h2 id="b">B</h2>
+
+<h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
+
+<p>給定 n 個字串，問說最少要動幾步讓每個字串都變成一樣，若沒辦法讓每個字串都變成一樣，則輸出 -1</p>
+
+<h3 id="solution-sketch-1">Solution sketch</h3>
+
+<p>讓每個字串都當最終字串直接做，然後找最少的</p>
+
+<!-- more -->
+
+<h3 id="ac-code-1">AC code</h3>
+
+<pre><code class="language-python">n = int(input())
+a = []
+ans = 1000000
+for i in range(0, n):
+	s = input()
+	a.append(s)
+for i in range(0, n):
+	cnt = 0
+	for j in range(0, n):
+		if i == j:
+			continue
+		for k in range(0, len(a[i])):
+			ch = True
+			for l in range(0, len(a[i])):
+				if a[i][l] != a[j][(k + l) % len(a[i])]:
+					ch = False
+					break
+			if k == len(a[i]) - 1 and ch == False:
+				print(-1)
+				exit(0)
+			if ch:
+				cnt += k
+				break
+	ans = min(ans, cnt)
+print(ans)
+</code></pre>
+
+<h2 id="c">C</h2>
+
+<h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
+
+<p>給定一堆數字，問說最少動幾步讓所有數字的 gcd &gt; 1，若有答案了話，輸出 YES 跟最少的步數，若沒有了話，則輸出 NO，將 ai 跟 ai+1 變成 ai - ai + 1 跟 ai + ai+1，視為動一步</p>
+
+<h3 id="solution-sketch-2">Solution sketch</h3>
+
+<p>觀察一下會發現，其實答案中不會出現 NO，這個答案，接著若全部都為偶數，則沒有問題，若序列上出現連續兩個奇數了話，則需做一次操作讓他們都變成偶數，若一奇一偶，則須做兩次操作讓他們都變成偶數</p>
+
+<p>需注意，若一開始 gcd 就大於 1 了話，則直接輸出答案</p>
+
+<!-- more -->
+
+<h3 id="ac-code-2">AC code</h3>
+
+<pre><code class="language-python">def gcd (a, b):
+	while b:
+		temp = a % b
+		a = b
+		b = temp
+	return a
+
+n = int(input())
+a = list(map(int, input().split()))
+ans = 0
+g = a[0]
+
+for i in range(1, n):
+	g = gcd(g, a[i])
+	if a[i] % 2 != 0:
+		if a[i - 1] % 2 != 0:
+			ans += 1
+			a[i] = 2
+			a[i - 1] = 2
+
+for i in a:
+	if i % 2 != 0:
+		ans += 2
+
+print(&quot;YES&quot;)
+
+if g &gt; 1:
+	print(0)
+else:
+	print(ans)
+</code></pre>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">andychen</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">0001-01-01</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/codingBlog/tags/apcs/">APCS</a>
+          
+          <a href="/codingBlog/tags/binary-search/">Binary search</a>
+          
+          <a href="/codingBlog/tags/implementation/">Implementation</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'github-page-blog';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/andychen841210?tab=repositories" class="iconfont icon-github" title="github"></a>
+  <a href="https://andychen841210.github.io/codingBlog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">andychen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/codingBlog/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/codingBlog/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/codingBlog/dist/even.min.js?v=2.7.2"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-81902328-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+</html>

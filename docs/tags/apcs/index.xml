@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apcs on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/tags/apcs/</link>
+    <description>Recent content in Apcs on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://andychen841210.github.io/codingBlog/tags/apcs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Codeforces Round410 Div2</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round410abc/</guid>
+      <description>Codeforces Round410 Division 2 A Abridge problem statement 給定一個字串，問說可不可以換字串中一個字，使這個字串變成回文 Solution sketch 直接掃過去看有沒有辦法換一個字讓他變成回文，若本身就是回文了</description>
+    </item>
+    
+  </channel>
+</rss>

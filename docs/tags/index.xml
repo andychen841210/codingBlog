@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/tags/</link>
+    <description>Recent content in Tags on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://andychen841210.github.io/codingBlog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apcs</title>
+      <link>https://andychen841210.github.io/codingBlog/tags/apcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/tags/apcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Binary Search</title>
+      <link>https://andychen841210.github.io/codingBlog/tags/binary-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/tags/binary-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementation</title>
+      <link>https://andychen841210.github.io/codingBlog/tags/implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/tags/implementation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
