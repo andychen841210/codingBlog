@@ -6,10 +6,31 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jan 2018 21:34:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Mar 2018 23:24:52 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round440ABC</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round440abc/</link>
+      <pubDate>Thu, 22 Mar 2018 23:24:52 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round440abc/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round440-division-2-http-codeforces-com-contest-872&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/872&#34;&gt;Codeforces Round440 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GCJ2017QualificationRoundB</title>
