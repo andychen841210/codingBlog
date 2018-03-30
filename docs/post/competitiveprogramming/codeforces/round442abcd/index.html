@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Round441ABCD - Coding Blog</title>
+  <title>Round442ABCD - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,8 +17,8 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round441 Division 2 A Abridge problem statement 在圖上走 n - 1 次，使得總共走的距離最小
-Solution sketch 每次都走最小的那條邊即可
+  <meta name="description" content="Codeforces Round442 Division 2 A Abridge problem statement 給定一個字串，問字串中有沒有出現 &amp;ldquo;Danil&amp;rdquo;, &amp;ldquo;Olya&amp;rdquo;, &amp;ldquo;Slava&amp;rdquo;, &amp;ldquo;Ann&amp;rdquo; and &amp;ldquo;Nikita&amp;rdquo; 其中一個名字，而這個名字中只能在字串中出現一次
+Solution sketch 直接掃一遍
 
 " />
 
@@ -32,7 +32,7 @@ Solution sketch 每次都走最小的那條邊即可
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round441abcd/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -50,31 +50,27 @@ Solution sketch 每次都走最小的那條邊即可
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Round441ABCD" />
-<meta property="og:description" content="Codeforces Round441 Division 2
+<meta property="og:title" content="Round442ABCD" />
+<meta property="og:description" content="Codeforces Round442 Division 2
 
 A
 
 Abridge problem statement
 
-在圖上走 n - 1 次，使得總共走的距離最小
+給定一個字串，問字串中有沒有出現 &ldquo;Danil&rdquo;, &ldquo;Olya&rdquo;, &ldquo;Slava&rdquo;, &ldquo;Ann&rdquo; and &ldquo;Nikita&rdquo; 其中一個名字，而這個名字中只能在字串中出現一次
 
 Solution sketch
 
-每次都走最小的那條邊即可
+直接掃一遍
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round441abcd/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/" />
 
 
 
-<meta property="article:published_time" content="2018-03-27T18:15:35&#43;08:00"/>
-<meta property="article:modified_time" content="2018-03-27T18:15:35&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2018-03-30T22:51:22&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-30T22:51:22&#43;08:00"/>
 
 
 
@@ -82,40 +78,44 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="Round441ABCD">
-<meta itemprop="description" content="Codeforces Round441 Division 2
+
+
+
+
+<meta itemprop="name" content="Round442ABCD">
+<meta itemprop="description" content="Codeforces Round442 Division 2
 
 A
 
 Abridge problem statement
 
-在圖上走 n - 1 次，使得總共走的距離最小
+給定一個字串，問字串中有沒有出現 &ldquo;Danil&rdquo;, &ldquo;Olya&rdquo;, &ldquo;Slava&rdquo;, &ldquo;Ann&rdquo; and &ldquo;Nikita&rdquo; 其中一個名字，而這個名字中只能在字串中出現一次
 
 Solution sketch
 
-每次都走最小的那條邊即可
+直接掃一遍
 
 ">
 
 
-<meta itemprop="dateModified" content="2018-03-27T18:15:35&#43;08:00" />
-<meta itemprop="wordCount" content="1069">
+<meta itemprop="dateModified" content="2018-03-30T22:51:22&#43;08:00" />
+<meta itemprop="wordCount" content="1292">
 
 
 
-<meta itemprop="keywords" content="Math,Brute Force," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round441ABCD"/>
-<meta name="twitter:description" content="Codeforces Round441 Division 2
+<meta itemprop="keywords" content="String,Dp,Bfs," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round442ABCD"/>
+<meta name="twitter:description" content="Codeforces Round442 Division 2
 
 A
 
 Abridge problem statement
 
-在圖上走 n - 1 次，使得總共走的距離最小
+給定一個字串，問字串中有沒有出現 &ldquo;Danil&rdquo;, &ldquo;Olya&rdquo;, &ldquo;Slava&rdquo;, &ldquo;Ann&rdquo; and &ldquo;Nikita&rdquo; 其中一個名字，而這個名字中只能在字串中出現一次
 
 Solution sketch
 
-每次都走最小的那條邊即可
+直接掃一遍
 
 "/>
 
@@ -180,16 +180,16 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Round441ABCD</h1>
+      <h1 class="post-title">Round442ABCD</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-03-27 </span>
+        <span class="post-time"> 2018-03-30 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
             
           </div>
-        <span class="more-meta"> 1069 word </span>
+        <span class="more-meta"> 1292 word </span>
         <span class="more-meta"> 3 min read </span>
         
       </div>
@@ -205,7 +205,7 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#codeforces-round441-division-2-http-codeforces-com-contest-876"><a href="http://codeforces.com/contest/876">Codeforces Round441 Division 2</a></a></li>
+<li><a href="#codeforces-round442-division-2-http-codeforces-com-contest-877"><a href="http://codeforces.com/contest/877">Codeforces Round442 Division 2</a></a></li>
 <li><a href="#a">A</a>
 <ul>
 <li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
@@ -238,17 +238,17 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="codeforces-round441-division-2-http-codeforces-com-contest-876"><a href="http://codeforces.com/contest/876">Codeforces Round441 Division 2</a></h2>
+      <h2 id="codeforces-round442-division-2-http-codeforces-com-contest-877"><a href="http://codeforces.com/contest/877">Codeforces Round442 Division 2</a></h2>
 
 <h2 id="a">A</h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
-<p>在圖上走 n - 1 次，使得總共走的距離最小</p>
+<p>給定一個字串，問字串中有沒有出現 &ldquo;Danil&rdquo;, &ldquo;Olya&rdquo;, &ldquo;Slava&rdquo;, &ldquo;Ann&rdquo; and &ldquo;Nikita&rdquo; 其中一個名字，而這個名字中只能在字串中出現一次</p>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>每次都走最小的那條邊即可</p>
+<p>直接掃一遍</p>
 
 <p></p>
 
@@ -258,49 +258,33 @@ Solution sketch
 using namespace std;
 
 int main(){
-	int n, a, b, c;
-	scanf(&quot; %d&quot;, &amp;n);
-	scanf(&quot; %d&quot;, &amp;a);
-	scanf(&quot; %d&quot;, &amp;b);
-	scanf(&quot; %d&quot;, &amp;c);
+	char s[110], a[5][10] = {&quot;Danil&quot;, &quot;Olya&quot;, &quot;Slava&quot;, &quot;Ann&quot;, &quot;Nikita&quot;};
 
-	int now = 0, ans = 0;
-	n--;
-	while(n--){
-		if (now == 0){
-			if (a &lt; b){
-				ans += a;
-				now = 1;
-			}
-			else{
-				ans += b;
-				now = 2;
-			}
-		}
-		else if (now == 1){
-			if (a &lt; c){
-				ans += a;
-				now = 0;
-			}
-			else{
-				ans += c;
-				now = 2;
-			}
-		}
-		else{
-			if (b &lt; c){
-				ans += b;
-				now = 0;
-			}
-			else{
-				ans += c;
-				now = 1;
+	scanf(&quot; %s&quot;, s);
+	
+	int cnt = 0;
+	for (int i = 0; i &lt; strlen(s); i++){
+		for (int j = 0; j &lt; 5; j++){
+			if (s[i] == a[j][0]){
+				int ch = 1;
+				for (int k = 0; k &lt; strlen(a[j]); k++){
+					if (s[i + k] != a[j][k]){
+						ch = 0;
+						break;
+					}
+				}
+
+				if (ch)
+					cnt += 1;
 			}
 		}
 	}
 
-	printf(&quot;%d\n&quot;, ans);
-
+	if (cnt == 1)
+		printf(&quot;YES\n&quot;);
+	else
+		printf(&quot;NO\n&quot;);
+	
 	return 0;
 }
 </code></pre>
@@ -309,12 +293,19 @@ int main(){
 
 <h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
 
-<p>給定 n 個數，從中選出 k 個，使得兩兩的差值可以被 m 整除，若無法找到則輸出 No，若有了話則輸出 Yes，以及這 k 個數</p>
+<p>給定一個由 a、b 組成的字串，將字串切成三個字串，第一個跟第三個字串只能包含 a，第二個字串只能包含 b，可以是空字串，
+可以對字串刪除任意字元，問如何讓字串切成三等分後，合起來的長度最長，字元不能改變他的順序，但可以刪除</p>
 
 <h3 id="solution-sketch-1">Solution sketch</h3>
 
-<p>將給定的 n 個數都 % m，將餘數相同的擺到同一個陣列裡面，如果這個陣列超過 k 個，輸出前 k 個即可，若全部的陣列都沒超過 k 個，則輸出 No，
-因為相同的數若 % m 的餘數相同了話，則想個相減後的值必定能被 m 整除</p>
+<p>prefix[i] 表示第 i 個之前包含多少個 a，sufix[i] 表示第 i 個之後包含多少個 i，
+a_cnt 為 a 的個數，b_cnt 為 b 的個數，b1 為在 i 之前有多少個 b，b2 為在 j 之後有多少個 b
+接著分 5 種 case 討論，取其中的最大值即可
+1. 全部都是 a 的時候
+2. 全部都是 b 的時候
+3. aa&hellip;aa + bb&hellip;bb + aa&hellip;aa，prefix[i] + sufix[j] + b_cnt - b1 - b2
+4. bb&hellip;bb + aa&hellip;aa，第一個是空的，b_cnt + sufix[j] - b2
+5. aa&hellip;aa + bb&hellip;bb，第三個是空的，prefix[i] + b_cnt - b1</p>
 
 <h3 id="ac-code-1">AC code</h3>
 
@@ -322,34 +313,50 @@ int main(){
 using namespace std;
 
 int main(){
-	
-	int n, k, m;
-	vector&lt;int&gt; v[100010];
+	char s[5010];
+	scanf(&quot; %s&quot;, s);
 
-	scanf(&quot; %d %d %d&quot;, &amp;n, &amp;k, &amp;m);
-
-	for (int i = 0; i &lt; n; i++){
-		int x;
-		scanf(&quot; %d&quot;, &amp;x);
-		v[x % m].push_back(x);
+	int l = strlen(s);
+	int prefix[5010] = {0}, sufix[5010] = {0};
+	int mx = 0;
+	for (int i = 0; i &lt; l; i++){
+		if (s[i] == 'a'){
+			mx += 1;
+		}
+		prefix[i] = mx;
 	}
 
-	for (int i = 0; i &lt; 100010; i++){
-		if (v[i].size() &gt;= k){
-			printf(&quot;Yes\n&quot;);
-			for (int j = 0; j &lt; k; j++){
-				if (j == 0)
-					printf(&quot;%d&quot;, v[i][j]);
-				else
-					printf(&quot; %d&quot;, v[i][j]);
-			}
-			printf(&quot;\n&quot;);
+	mx = 0;
+	for (int i = l - 1; i &gt;= 0; i--){
+		if (s[i] == 'a'){
+			mx += 1;
+		}
+		sufix[i] = mx;
+	}
 
-			return 0;
+	int a_cnt = 0, b_cnt = 0, ans = 0;
+	for (int i = 0; i &lt; l; i++){
+		if (s[i] == 'a')
+			a_cnt += 1;
+		if (s[i] == 'b')
+			b_cnt += 1;
+	}
+
+	int b1 = 0, b2 = 0;
+	for (int i = 0; i &lt; l; i++){
+		b2 = 0;
+		if (s[i] == 'b')
+			b1++;
+		for (int j = l - 1; j &gt; i; j--){
+			if (s[j] == 'b')
+				b2++;
+			ans = max(ans, prefix[i] + sufix[j] + b_cnt - b1 - b2);
+			ans = max(ans, sufix[j] + b_cnt - b2);
+			ans = max(ans, prefix[i] + b_cnt - b1);
 		}
 	}
 
-	printf(&quot;No\n&quot;);
+	printf(&quot;%d\n&quot;, max(ans, max(a_cnt, b_cnt)));
 
 	return 0;
 }
@@ -359,15 +366,12 @@ int main(){
 
 <h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
 
-<p>給定一個數 n，問是否存在 x，使得 x 加上 x 的個別位數會等於 n，若有了話，則先輸出有幾個符合的，接著由小到大輸出符合的 x，
-若沒有了話，則輸出 0</p>
+<p>給定一個 1 * n 的 cells，在這些 cells 上會有任意台坦克，你現在可以從天空中丟炸彈下去任意個 cells，
+當坦克第一次被炸到的會移動到隔壁的 cell，當第二次被炸到的時候坦克就會壞掉，問說最少需要多少個炸彈可以把全部的坦克炸壞</p>
 
 <h3 id="solution-sketch-2">Solution sketch</h3>
 
-<p>因為最大的 n 只有 1000000000，因此 x 最大個個別位數相加不會超過 100，因為 99999999 的個別位數和為 72，
-因此可以搜大一點沒關係，接著可以把題目換成數學式，n = x + (x 的個別位數和)，移項及為 n - (x 的個別位數和) = x，
-就可以搜個別位數和 i，從 0 到 100，將 input 的 n 減去 i 及為 x，在檢查 x 個別位數加起來是否等於現在搜的 i，
-若相等就 x 塞入答案陣列當中，最後將答案陣列中的東西輸出即可</p>
+<p>先炸偶數格子，再炸奇數，再炸偶數，為什麼不先炸奇數，再偶數，再奇數，因為在格子是奇數的時候會多炸一次</p>
 
 <h3 id="ac-code-2">AC code</h3>
 
@@ -376,73 +380,99 @@ using namespace std;
 
 int main(){
 	int n;
-	vector&lt;int&gt; v;
 	scanf(&quot; %d&quot;, &amp;n);
 	
-	for (int i = 0; i &lt; 100; i++){
-		int temp = n - i, cnt = 0;
-		if (temp &lt; 0)
-			break;
-		while(temp){
-			cnt += temp % 10;
-			temp /= 10;
-		}
-
-		if (cnt == i)
-			v.push_back(n - i);
+	printf(&quot;%d\n&quot;, n / 2 * 2 + n - n / 2);
+	for (int i = 2; i &lt;= n; i += 2){
+		if (i == 2)
+			printf(&quot;%d&quot;, i);
+		else
+			printf(&quot; %d&quot;, i);
 	}
 	
-	sort(v.begin(), v.end());
-	printf(&quot;%d\n&quot;, v.size());
-	for (int i = 0; i &lt; v.size(); i++){
-		printf(&quot;%d\n&quot;, v[i]);
-	}
+	for (int i = 1; i &lt;= n; i += 2)
+		printf(&quot; %d&quot;, i);
+	
+	for (int i = 2; i &lt;= n; i += 2)
+		printf(&quot; %d&quot;, i);
+	
+	printf(&quot;\n&quot;);
 
 	return 0;
-}	
+}
 </code></pre>
 
 <h2 id="d">D</h2>
 
 <h3 id="abridge-problem-statement-3">Abridge problem statement</h3>
 
-<p>題目很難看懂，基本的意思是有 n 個位置，有 n 次操作，每次操作在第 p[i] 的位置上放上一枚硬幣，然後每次放上一枚硬幣以後，
-要從左往右掃一遍，，如果一個硬幣右邊沒有硬幣，則把這個硬幣移到右邊有硬幣的位置或者移到最右邊，然後再去看下一個硬幣，一直重複，
-直到當前的所有硬幣都移到最右邊為止，問每次操作，需要多少步驟才能移到最後，初始狀態算一步</p>
+<p>給定一張 n * m 的地圖，給定起點和終點，一個人從起點出發，每秒可以像一個方向走 1 ~ k 中的任意步數，問從起點到終點最少需花多少時間，
+如果不能走到，則輸出 -1</p>
 
 <h3 id="solution-sketch-3">Solution sketch</h3>
 
-<p>只需要由右邊往左邊看，是否最右邊的位置是否有被硬幣佔住，若新放進來的硬幣沒有佔住最右邊的格子了話，則為上一次移動數加 1，
-若有被佔住了話，則往前找到離最右邊最近的沒被佔住的格子，當前移動個數減去最右邊有被佔住的個數即可</p>
+<p>這跟一般的走迷宮不太一樣，因為他每秒可以走多步，所以我們只要去枚舉每個方向及該方向上走的步數
+bfs，要注意剪枝否則會 TLE，我們仍用 vis 來表示是否走過，只是多一個維度是用來表示這個方向是否走過</p>
 
 <h3 id="ac-code-3">AC code</h3>
 
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int main(){
-	int n, ans = 1, last;
-	int a[300010] = {0};
-	
-	scanf(&quot; %d&quot;, &amp;n);
-	last = n;
-	
-	printf(&quot;1&quot;);
-	for (int i = 0; i &lt; n; i++){
-		int x;
-		scanf(&quot; %d&quot;, &amp;x);
-		
-		a[x] = 1;
-		ans += 1;
+int n, m, k, x1, x2, y11, y2;
+char a[1010][1010];
+bool vis[2][1010][1010];
+int ans;
+bool ch = false;
+int dir_y[4] = {0, 1, 0, -1}, dir_x[4] = {-1, 0, 1, 0};
 
-		while(a[last]){
-			ans -= 1;
-			last -= 1;
+struct INFO{
+	int x, y, cnt;
+};
+
+int main(){
+
+	scanf(&quot; %d %d %d&quot;, &amp;n, &amp;m, &amp;k);
+
+	for (int i = 0; i &lt; n; i++)
+		for (int j = 0; j &lt; m; j++)
+			scanf(&quot; %c&quot;, &amp;a[i][j]);
+	
+	scanf(&quot; %d %d %d %d&quot;, &amp;x1, &amp;y11, &amp;x2, &amp;y2);
+	x1--; x2--; y11--; y2--;
+	
+	if (x1 == x2 &amp;&amp; y11 == y2){
+		printf(&quot;0\n&quot;);
+		return 0;
+	}
+
+	queue&lt;INFO&gt; q;
+	q.push(INFO{x1, y11, 0});
+
+	while(!q.empty()){
+		INFO info = q.front(); q.pop();
+		if (info.x == x2 &amp;&amp; info.y == y2){
+			printf(&quot;%d\n&quot;, info.cnt);
+			return 0;
 		}
 
-		printf(&quot; %d&quot;, ans);
+		for (int i = 0; i &lt; 4; i++){
+			for (int j = 1; j &lt;= k; j++){
+				int temp_x = info.x + dir_x[i] * j, temp_y = info.y + dir_y[i] * j;
+				if (temp_x &lt; 0 || temp_x &gt;= n || temp_y &lt; 0 || temp_y &gt;= m)
+					break;
+				if (a[temp_x][temp_y] == '#')
+					break;
+				if (vis[i &amp; 1][temp_x][temp_y])
+					break;
+
+				vis[i &amp; 1][temp_x][temp_y] = true;
+				q.push(INFO{temp_x, temp_y, info.cnt + 1});
+			}
+		}
 	}
-	printf(&quot;\n&quot;);
+
+	printf(&quot;-1\n&quot;);
 
 	return 0;
 }
@@ -458,7 +488,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-03-27</span>
+    <span class="item-content">2018-03-30</span>
   </p>
   
   <p class="copyright-item">
@@ -473,23 +503,20 @@ int main(){
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/math/">Math</a>
+          <a href="/codingBlog/tags/string/">String</a>
           
-          <a href="/codingBlog/tags/brute-force/">Brute Force</a>
+          <a href="/codingBlog/tags/dp/">Dp</a>
+          
+          <a href="/codingBlog/tags/bfs/">Bfs</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round442abcd/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round442ABCD</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round440abc/">
-            <span class="next-text nav-default">Round440ABC</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round441abcd/">
+            <span class="next-text nav-default">Round441ABCD</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

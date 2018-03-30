@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dp on Coding Blog</title>
-    <link>https://andychen841210.github.io/codingBlog/tags/dp/</link>
-    <description>Recent content in Dp on Coding Blog</description>
+    <title>Bfs on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/tags/bfs/</link>
+    <description>Recent content in Bfs on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 Mar 2018 22:51:22 +0800</lastBuildDate>
     
-	<atom:link href="https://andychen841210.github.io/codingBlog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andychen841210.github.io/codingBlog/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -28,27 +28,6 @@
 &lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
 
 &lt;p&gt;直接掃一遍&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Round422ABCD</title>
-      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round422abcd/</link>
-      <pubDate>Sun, 28 Jan 2018 21:27:16 +0800</pubDate>
-      
-      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round422abcd/</guid>
-      <description>&lt;h2 id=&#34;codeforces-round422-division-2-http-codeforces-com-contest-822&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/822&#34;&gt;Codeforces Round422 Division 2&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
-
-&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
-
-&lt;p&gt;給定 A 跟 B，問 A! 跟 B! 的最大公因數，min(A, B) &amp;lt;= 12&lt;/p&gt;
-
-&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
-
-&lt;p&gt;取 min(A, B) 直接坐階乘&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

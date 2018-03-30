@@ -6,10 +6,31 @@
     <description>Recent content in String on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jan 2018 21:27:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 22:51:22 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/tags/string/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round442ABCD</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/</link>
+      <pubDate>Fri, 30 Mar 2018 22:51:22 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round442-division-2-http-codeforces-com-contest-877&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/877&#34;&gt;Codeforces Round442 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定一個字串，問字串中有沒有出現 &amp;ldquo;Danil&amp;rdquo;, &amp;ldquo;Olya&amp;rdquo;, &amp;ldquo;Slava&amp;rdquo;, &amp;ldquo;Ann&amp;rdquo; and &amp;ldquo;Nikita&amp;rdquo; 其中一個名字，而這個名字中只能在字串中出現一次&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;直接掃一遍&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round422ABCD</title>

@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/</loc>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round441abcd/</loc>
     <lastmod>2018-03-27T18:15:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -59,6 +66,13 @@
   </url>
   
   <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/bfs/</loc>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/brute-force/</loc>
     <lastmod>2018-03-27T18:15:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,14 +94,14 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/</loc>
-    <lastmod>2018-03-27T18:15:35+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/categories/competitive-programming/</loc>
-    <lastmod>2018-03-27T18:15:35+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -101,7 +115,7 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/dp/</loc>
-    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -136,7 +150,7 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/post/</loc>
-    <lastmod>2018-03-27T18:15:35+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -150,7 +164,7 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/string/</loc>
-    <lastmod>2018-01-28T21:27:16+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -164,7 +178,7 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/</loc>
-    <lastmod>2018-03-27T18:15:35+08:00</lastmod>
+    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

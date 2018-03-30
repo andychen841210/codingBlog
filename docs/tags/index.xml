@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Mar 2018 18:15:35 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 22:51:22 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bfs</title>
+      <link>https://andychen841210.github.io/codingBlog/tags/bfs/</link>
+      <pubDate>Fri, 30 Mar 2018 22:51:22 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/tags/bfs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Brute Force</title>
@@ -23,7 +32,7 @@
     <item>
       <title>Dp</title>
       <link>https://andychen841210.github.io/codingBlog/tags/dp/</link>
-      <pubDate>Sun, 28 Jan 2018 21:27:16 +0800</pubDate>
+      <pubDate>Fri, 30 Mar 2018 22:51:22 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/tags/dp/</guid>
       <description></description>
@@ -59,7 +68,7 @@
     <item>
       <title>String</title>
       <link>https://andychen841210.github.io/codingBlog/tags/string/</link>
-      <pubDate>Sun, 28 Jan 2018 21:27:16 +0800</pubDate>
+      <pubDate>Fri, 30 Mar 2018 22:51:22 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/tags/string/</guid>
       <description></description>
