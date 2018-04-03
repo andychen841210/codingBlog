@@ -4,7 +4,7 @@ date: 2018-03-27T18:15:35+08:00
 draft: false
 lastmod: 2018-03-27T18:15:35+08:00
 tags: ["Math", "Brute Force"]
-categories: ["Competitive Programming"]
+categories: ["Competitive Programming", "Codeforces", "Division 2"]
 ---
 ## [Codeforces Round441 Division 2](http://codeforces.com/contest/876)
 

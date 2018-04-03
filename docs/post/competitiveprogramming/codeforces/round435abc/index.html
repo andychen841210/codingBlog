@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Round440ABC - Coding Blog</title>
+  <title>Round435ABC - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,8 +17,8 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round440 Division 2 A Abridge problem statement 給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list
-Solution sketch 先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案
+  <meta name="description" content="Codeforces Round435 Division 2 A Abridge problem statement 給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
+Solution sketch 將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 
 " />
 
@@ -32,7 +32,7 @@ Solution sketch 先檢查兩個 list 是否有重複的數字，若有了話找�
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round440abc/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -50,31 +50,27 @@ Solution sketch 先檢查兩個 list 是否有重複的數字，若有了話找�
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Round440ABC" />
-<meta property="og:description" content="Codeforces Round440 Division 2
+<meta property="og:title" content="Round435ABC" />
+<meta property="og:description" content="Codeforces Round435 Division 2
 
 A
 
 Abridge problem statement
 
-給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list
+給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
 
 Solution sketch
 
-先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案
+將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round440abc/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/" />
 
 
 
-<meta property="article:published_time" content="2018-03-22T23:24:52&#43;08:00"/>
-<meta property="article:modified_time" content="2018-03-22T23:24:52&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2018-04-03T19:33:06&#43;08:00"/>
+<meta property="article:modified_time" content="2018-04-03T19:33:06&#43;08:00"/>
 
 
 
@@ -82,40 +78,44 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="Round440ABC">
-<meta itemprop="description" content="Codeforces Round440 Division 2
+
+
+
+
+<meta itemprop="name" content="Round435ABC">
+<meta itemprop="description" content="Codeforces Round435 Division 2
 
 A
 
 Abridge problem statement
 
-給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list
+給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
 
 Solution sketch
 
-先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案
+將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 
 ">
 
 
-<meta itemprop="dateModified" content="2018-03-22T23:24:52&#43;08:00" />
-<meta itemprop="wordCount" content="979">
+<meta itemprop="dateModified" content="2018-04-03T19:33:06&#43;08:00" />
+<meta itemprop="wordCount" content="713">
 
 
 
-<meta itemprop="keywords" content="Math,Greedy," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round440ABC"/>
-<meta name="twitter:description" content="Codeforces Round440 Division 2
+<meta itemprop="keywords" content="Dfs," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round435ABC"/>
+<meta name="twitter:description" content="Codeforces Round435 Division 2
 
 A
 
 Abridge problem statement
 
-給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list
+給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
 
 Solution sketch
 
-先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案
+將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 
 "/>
 
@@ -180,10 +180,10 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Round440ABC</h1>
+      <h1 class="post-title">Round435ABC</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-03-22 </span>
+        <span class="post-time"> 2018-04-03 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
@@ -193,7 +193,7 @@ Solution sketch
               <a href="/codingBlog/categories/division-2/"> Division 2 </a>
             
           </div>
-        <span class="more-meta"> 979 word </span>
+        <span class="more-meta"> 713 word </span>
         <span class="more-meta"> 2 min read </span>
         
       </div>
@@ -209,7 +209,7 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#codeforces-round440-division-2-http-codeforces-com-contest-872"><a href="http://codeforces.com/contest/872">Codeforces Round440 Division 2</a></a></li>
+<li><a href="#codeforces-round435-division-2-http-codeforces-com-contest-862"><a href="http://codeforces.com/contest/862">Codeforces Round435 Division 2</a></a></li>
 <li><a href="#a">A</a>
 <ul>
 <li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
@@ -236,17 +236,17 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="codeforces-round440-division-2-http-codeforces-com-contest-872"><a href="http://codeforces.com/contest/872">Codeforces Round440 Division 2</a></h2>
+      <h2 id="codeforces-round435-division-2-http-codeforces-com-contest-862"><a href="http://codeforces.com/contest/862">Codeforces Round435 Division 2</a></h2>
 
 <h2 id="a">A</h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
-<p>給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list</p>
+<p>給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x</p>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案</p>
+<p>將比 x 小的數字補起來，若有 x 則在刪除 x 即可</p>
 
 <p></p>
 
@@ -255,38 +255,25 @@ Solution sketch
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int n, m;
-vector&lt;int&gt; a, b;
-
 int main(){
+	int n, x, inp;
+	int a[1000] = {0};
 
-	scanf(&quot; %d %d&quot;, &amp;n, &amp;m);
-	
-	int x;
+	scanf(&quot; %d %d&quot;, &amp;n, &amp;x);
 	for (int i = 0; i &lt; n; i++){
-		scanf(&quot; %d&quot;, &amp;x);
-		a.push_back(x);
-	}
-	for (int i = 0; i &lt; m; i++){
-		scanf(&quot; %d&quot;, &amp;x);
-		b.push_back(x);
-	}
-
-	sort(a.begin(), a.end());
-	sort(b.begin(), b.end());
-	
-	int ans = -1;
-	for (int i = 0; i &lt; n; i++){
-		for (int j = 0; j &lt; m; j++){
-			if (a[i] == b[j]){
-				ans = a[i];
-				printf(&quot;%d\n&quot;, ans);
-				return 0;
-			}
-		}
+		scanf(&quot; %d&quot;, &amp;inp);
+		a[inp] = 1;
 	}
 	
-	printf(&quot;%d%d\n&quot;, min(a[0], b[0]), max(a[0], b[0]));
+	int cnt = 0;
+	for (int i = 0; i &lt; x; i++){
+		if (a[i] == 0)
+			cnt++;
+	}
+	if (a[x] == 1)
+		cnt++;
+	
+	printf(&quot;%d\n&quot;, cnt);
 
 	return 0;
 }
@@ -296,65 +283,63 @@ int main(){
 
 <h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
 
-<p>給定 n, k 表示有一個包含 n 個 integers 的 array，則需要把他分成 k 個 subsegments，要求取 maximum of minimums on the subsegments，
-maximum of minimums on the subsegments 定義為每個 subsegment 中的最小值，然後在取這全部最小值中的最大值，要讓這個值越大越好</p>
+<p>給定 n 個點，n - 1 條邊，他們構成一個二分圖，問最多可以加幾條邊，使得最後得到的圖還是二分圖</p>
 
 <h3 id="solution-sketch-1">Solution sketch</h3>
 
-<p>只會有 3 種 case</p>
-
-<ol>
-<li>當 k = 1 時，只會有一個 segment 所以答案就是最小值</li>
-<li>當 k = 2 時，先對 list 從左到右做 prefix 的 min，接著從右到左找目前最小的值是誰，然後跟 n - 1 的 prefix min 值比較誰比較大，
-全部掃過去後找到最大的就是答案</li>
-<li>當 k &gt;= 3 時，找最大值即可，因為切為 3 段以上，最大的那個值一定可以自己做一個 subsegment</li>
-</ol>
+<p>直接跑 dfs 計算一個 set 的個數，接著迭代另一個 set 中的點，看每個點還可以連多少個邊，加總起來及為答案，注意要開 long long</p>
 
 <h3 id="ac-code-1">AC code</h3>
 
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int main(){
-	int n, k, ans;
-	int a[100010];
+vector&lt;int&gt; v[100100], s;
+int n;
+int s1 = 0, s2 = 0;
+bool vis[100100];
 
-	scanf(&quot; %d %d&quot;, &amp;n, &amp;k);
+void dfs(int x, int ss){
+	vis[x] = true;
 	
-	for (int i = 0; i &lt; n; i++)
-		scanf(&quot; %d&quot;, &amp;a[i]);
-	
-	if (k == 1){
-		ans = a[0];
-		for (int i = 1; i &lt; n; i++)
-				ans = min(ans, a[i]);
-
-		printf(&quot;%d\n&quot;, ans);
+	if (ss == 0){
+		s.push_back(x);
+		s1++;
 	}
-	else if (k == 2){
-		int pre_min[100010];
-		pre_min[0] = a[0];
-		
-		for (int i = 1; i &lt; n; i++)
-			pre_min[i] = min(pre_min[i - 1], a[i]);
-
-		int mn = a[n - 1];
-		ans = mn;
-		for (int i = n - 2; i &gt;= 1; i--){
-			mn = min(mn, a[i]);
-			ans = max(ans, max(mn, pre_min[i - 1]));
+	else
+		s2++;
+	
+	for (int i = 0; i &lt; v[x].size(); i++){
+		if (vis[v[x][i]] == false){
+			if (ss == 0)
+				dfs(v[x][i], 1);
+			else
+				dfs(v[x][i], 0);
 		}
-		ans = max(ans, max(mn, pre_min[0]));
-
-		printf(&quot;%d\n&quot;, ans);
 	}
-	else{
-		ans = a[0];
-		for (int i = 1; i &lt; n; i++)
-			ans = max(ans, a[i]);
+}
 
-		printf(&quot;%d\n&quot;, ans);
+int main(){
+
+	scanf(&quot; %d&quot;, &amp;n);
+	
+	for (int i = 0; i &lt; n - 1; i++){
+		int a, b;
+		scanf(&quot; %d %d&quot;, &amp;a, &amp;b);
+		a--; b--;
+		v[a].push_back(b);
+		v[b].push_back(a);
 	}
+
+	dfs(0, 0);
+
+	long long int ans = 0;
+	for (int i = 0; i &lt; s.size(); i++){
+		ans += s2 - v[s[i]].size();
+	}
+
+	printf(&quot;%lld\n&quot;, ans);
+
 	return 0;
 }
 </code></pre>
@@ -363,16 +348,18 @@ int main(){
 
 <h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
 
-<p>給定一個數 n，You are to represent n as a sum of maximum possible number of composite summands and print this maximum number, or print -1, if there are no such splittings.
-An integer greater than 1 is composite, if it is not prime, i.e. if it has positive divisors not equal to 1 and the integer itself.</p>
+<p>給定 n 和 x，問說可不可以用 n 個數字 xor 起來組出 x，n 個數字都要小於 1e6</p>
 
 <h3 id="solution-sketch-2">Solution sketch</h3>
 
+<p>分幾種狀況討論</p>
+
 <ol>
-<li>遇到 1, 2, 3, 5, 7, 11 則輸出 -1</li>
-<li>遇到 6 則輸出 1</li>
-<li>遇到奇數，因為 9 是第一個合法的 summand，因此將此數扣掉 9，答案個數加 1，接著就和偶數的 case 相同</li>
-<li>遇到偶數，因為 4 和 6 是合法的 summand，且任意的偶數都可以由 4 和 6 組成，因此，先看是否能被 4 整除，如果可以就直接輸出整除的個數，若不行，則扣掉一個 6 答案加 1，扣完 6 的值再除以 4 加到答案即可</li>
+<li>當 n 等於 1 時，就直接輸出 x</li>
+<li>當 n 等於 2 且 x 等於 0 時，則輸出 NO</li>
+<li>當 n 等於 2 且 x 不等於 0 時，則輸出 0 跟 x</li>
+<li>剩下情況，先將前 n - 3 個做 xor 得到 y，若 y 等於 x 了話，剩下三個則為 pw、pw * 2、pw ^ (pw * 2)，
+pw 為一個超過最大 x(1e5) 以及小於 1e6 的數字，若 y 不等於 x 了話，則剩下三個則為 0、pw、pw ^ y ^ x</li>
 </ol>
 
 <h3 id="ac-code-2">AC code</h3>
@@ -380,42 +367,54 @@ An integer greater than 1 is composite, if it is not prime, i.e. if it has posit
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int prime[6] = {1, 2, 3, 5, 7, 11};
+int a[1000100];
 
 int main(){
-	int n;
-	scanf(&quot; %d&quot;, &amp;n);
+	int n, x;
+	vector&lt;int&gt; v;
 
-	while(n--){
-		int x;
-		scanf(&quot; %d&quot;, &amp;x);
+	scanf(&quot; %d %d&quot;, &amp;n, &amp;x);
+	
+	if (n == 1)
+		printf(&quot;YES\n%d\n&quot;, x);
+	else if (n == 2){
+		if (x == 0)
+			printf(&quot;NO\n&quot;);
+		else
+			printf(&quot;YES\n0 %d\n&quot;, x);
+	}
+	else{
+		printf(&quot;YES\n&quot;);
 		
-		bool ch = false;
-		for (int i = 0; i &lt; 6; i++){
-			if (x == prime[i]){
-				printf(&quot;%d\n&quot;, -1);
-				ch = true;
-				break;
-			}
+		int x_or = 0, pw = 1 &lt;&lt; 18;
+		vector&lt;int&gt; ans;
+		for (int i = 1; i &lt;= n - 3; i++){
+			if (i == 1)
+				x_or = i;
+			else
+				x_or ^= i;
+			ans.push_back(i);
 		}
 
-		if (ch)
-			continue;
-		
-		int ans = 0;
-		if (x % 2 == 1){
-			x -= 9;
-			ans++;
-			if (x % 4 == 0)
-				printf(&quot;%d\n&quot;, ans + x / 4);
-			else
-				printf(&quot;%d\n&quot;, ans + (x - 6) / 4 + 1);
+		if (x_or == x){
+			ans.push_back(pw); ans.push_back(pw * 2); ans.push_back(pw ^ (pw * 2));
+			for (int i = 0; i &lt; ans.size(); i++){
+				if (i == 0)
+					printf(&quot;%d&quot;, ans[i]);
+				else
+					printf(&quot; %d&quot;, ans[i]);
+			}
+			printf(&quot;\n&quot;);
 		}
 		else{
-			if (x % 4 == 0)
-				printf(&quot;%d\n&quot;, x / 4);
-			else
-				printf(&quot;%d\n&quot;, (x - 6) / 4 + 1);
+			ans.push_back(0); ans.push_back(pw); ans.push_back(pw ^ x ^ x_or);
+			for (int i = 0; i &lt; ans.size(); i++){
+				if (i == 0)
+					printf(&quot;%d&quot;, ans[i]);
+				else
+					printf(&quot; %d&quot;, ans[i]);
+			}
+			printf(&quot;\n&quot;);
 		}
 	}
 
@@ -433,7 +432,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-03-22</span>
+    <span class="item-content">2018-04-03</span>
   </p>
   
   <p class="copyright-item">
@@ -448,23 +447,16 @@ int main(){
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/math/">Math</a>
-          
-          <a href="/codingBlog/tags/greedy/">Greedy</a>
+          <a href="/codingBlog/tags/dfs/">Dfs</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round441abcd/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round441ABCD</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/">
-            <span class="next-text nav-default">GCJ2017QualificationRoundB</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round442abcd/">
+            <span class="next-text nav-default">Round442ABCD</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

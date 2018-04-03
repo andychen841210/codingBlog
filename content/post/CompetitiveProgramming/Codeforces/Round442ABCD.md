@@ -4,7 +4,7 @@ date: 2018-03-30T22:51:22+08:00
 draft: false
 lastmod: 2018-03-30T22:51:22+08:00
 tags: ["String", "Dp", "Bfs"]
-categories: ["Competitive Programming"]
+categories: ["Competitive Programming", "Codeforces", "Division 2"]
 ---
 ## [Codeforces Round442 Division 2](http://codeforces.com/contest/877)
 
@@ -69,6 +69,7 @@ int main(){
 prefix[i] 表示第 i 個之前包含多少個 a，sufix[i] 表示第 i 個之後包含多少個 i，
 a_cnt 為 a 的個數，b_cnt 為 b 的個數，b1 為在 i 之前有多少個 b，b2 為在 j 之後有多少個 b
 接著分 5 種 case 討論，取其中的最大值即可
+
 1. 全部都是 a 的時候
 2. 全部都是 b 的時候
 3. aa...aa + bb...bb + aa...aa，prefix[i] + sufix[j] + b_cnt - b1 - b2

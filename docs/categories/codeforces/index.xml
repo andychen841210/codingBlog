@@ -6,10 +6,73 @@
     <description>Recent content in Codeforces on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Mar 2018 23:24:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 19:33:06 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/categories/codeforces/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round435ABC</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/</link>
+      <pubDate>Tue, 03 Apr 2018 19:33:06 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round435-division-2-http-codeforces-com-contest-862&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/862&#34;&gt;Codeforces Round435 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;將比 x 小的數字補起來，若有 x 則在刪除 x 即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Round442ABCD</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/</link>
+      <pubDate>Fri, 30 Mar 2018 22:51:22 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round442abcd/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round442-division-2-http-codeforces-com-contest-877&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/877&#34;&gt;Codeforces Round442 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定一個字串，問字串中有沒有出現 &amp;ldquo;Danil&amp;rdquo;, &amp;ldquo;Olya&amp;rdquo;, &amp;ldquo;Slava&amp;rdquo;, &amp;ldquo;Ann&amp;rdquo; and &amp;ldquo;Nikita&amp;rdquo; 其中一個名字，而這個名字中只能在字串中出現一次&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;直接掃一遍&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Round441ABCD</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round441abcd/</link>
+      <pubDate>Tue, 27 Mar 2018 18:15:35 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round441abcd/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round441-division-2-http-codeforces-com-contest-876&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/876&#34;&gt;Codeforces Round441 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;在圖上走 n - 1 次，使得總共走的距離最小&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;每次都走最小的那條邊即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round440ABC</title>

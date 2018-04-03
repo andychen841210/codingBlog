@@ -99,7 +99,7 @@ Solution sketch
 
 
 <meta itemprop="dateModified" content="2018-03-30T22:51:22&#43;08:00" />
-<meta itemprop="wordCount" content="1292">
+<meta itemprop="wordCount" content="1287">
 
 
 
@@ -188,8 +188,12 @@ Solution sketch
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
             
+              <a href="/codingBlog/categories/codeforces/"> Codeforces </a>
+            
+              <a href="/codingBlog/categories/division-2/"> Division 2 </a>
+            
           </div>
-        <span class="more-meta"> 1292 word </span>
+        <span class="more-meta"> 1287 word </span>
         <span class="more-meta"> 3 min read </span>
         
       </div>
@@ -300,12 +304,15 @@ int main(){
 
 <p>prefix[i] 表示第 i 個之前包含多少個 a，sufix[i] 表示第 i 個之後包含多少個 i，
 a_cnt 為 a 的個數，b_cnt 為 b 的個數，b1 為在 i 之前有多少個 b，b2 為在 j 之後有多少個 b
-接著分 5 種 case 討論，取其中的最大值即可
-1. 全部都是 a 的時候
-2. 全部都是 b 的時候
-3. aa&hellip;aa + bb&hellip;bb + aa&hellip;aa，prefix[i] + sufix[j] + b_cnt - b1 - b2
-4. bb&hellip;bb + aa&hellip;aa，第一個是空的，b_cnt + sufix[j] - b2
-5. aa&hellip;aa + bb&hellip;bb，第三個是空的，prefix[i] + b_cnt - b1</p>
+接著分 5 種 case 討論，取其中的最大值即可</p>
+
+<ol>
+<li>全部都是 a 的時候</li>
+<li>全部都是 b 的時候</li>
+<li>aa&hellip;aa + bb&hellip;bb + aa&hellip;aa，prefix[i] + sufix[j] + b_cnt - b1 - b2</li>
+<li>bb&hellip;bb + aa&hellip;aa，第一個是空的，b_cnt + sufix[j] - b2</li>
+<li>aa&hellip;aa + bb&hellip;bb，第三個是空的，prefix[i] + b_cnt - b1</li>
+</ol>
 
 <h3 id="ac-code-1">AC code</h3>
 
@@ -514,6 +521,11 @@ int main(){
       
       <nav class="post-nav">
         
+          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round435abc/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Round435ABC</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
           <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round441abcd/">
             <span class="next-text nav-default">Round441ABCD</span>

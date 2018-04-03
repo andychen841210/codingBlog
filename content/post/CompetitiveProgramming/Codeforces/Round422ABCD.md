@@ -180,8 +180,8 @@ int main(){
 
 ### Solution sketch
 
-當 i 是質數，他只能分成一組，f[i] = i * (i - 1) / 2
-當 i 是合數，f[i] = (i / minFactor) * f[minFactor] + f[i / minFactor]， minFactor 為 i 的最小質因數
+1. 當 i 是質數，他只能分成一組，f[i] = i * (i - 1) / 2
+2. 當 i 是合數，f[i] = (i / minFactor) * f[minFactor] + f[i / minFactor]， minFactor 為 i 的最小質因數
 
 <!-- more -->
 
