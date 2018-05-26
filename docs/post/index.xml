@@ -6,10 +6,31 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Apr 2018 19:33:06 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 May 2018 19:20:20 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round473ABCD</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/</link>
+      <pubDate>Sat, 26 May 2018 19:20:20 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round473-division-2-http-codeforces-com-contest-959&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/959&#34;&gt;Codeforces Round473 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;直接判奇偶數&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round435ABC</title>

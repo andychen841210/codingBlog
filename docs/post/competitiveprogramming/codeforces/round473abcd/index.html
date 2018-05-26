@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Round435ABC - Coding Blog</title>
+  <title>Round473ABCD - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,8 +17,8 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round435 Division 2 A Abridge problem statement 給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
-Solution sketch 將比 x 小的數字補起來，若有 x 則在刪除 x 即可
+  <meta name="description" content="Codeforces Round473 Division 2 A Abridge problem statement Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
+Solution sketch 直接判奇偶數
 
 " />
 
@@ -32,7 +32,7 @@ Solution sketch 將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -50,31 +50,27 @@ Solution sketch 將比 x 小的數字補起來，若有 x 則在刪除 x 即可
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Round435ABC" />
-<meta property="og:description" content="Codeforces Round435 Division 2
+<meta property="og:title" content="Round473ABCD" />
+<meta property="og:description" content="Codeforces Round473 Division 2
 
 A
 
 Abridge problem statement
 
-給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
+Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
 
 Solution sketch
 
-將比 x 小的數字補起來，若有 x 則在刪除 x 即可
+直接判奇偶數
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round435abc/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/" />
 
 
 
-<meta property="article:published_time" content="2018-04-03T19:33:06&#43;08:00"/>
-<meta property="article:modified_time" content="2018-04-03T19:33:06&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2018-05-26T19:20:20&#43;08:00"/>
+<meta property="article:modified_time" content="2018-05-26T19:20:20&#43;08:00"/>
 
 
 
@@ -82,40 +78,44 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="Round435ABC">
-<meta itemprop="description" content="Codeforces Round435 Division 2
+
+
+
+
+<meta itemprop="name" content="Round473ABCD">
+<meta itemprop="description" content="Codeforces Round473 Division 2
 
 A
 
 Abridge problem statement
 
-給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
+Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
 
 Solution sketch
 
-將比 x 小的數字補起來，若有 x 則在刪除 x 即可
+直接判奇偶數
 
 ">
 
 
-<meta itemprop="dateModified" content="2018-04-03T19:33:06&#43;08:00" />
-<meta itemprop="wordCount" content="713">
+<meta itemprop="dateModified" content="2018-05-26T19:20:20&#43;08:00" />
+<meta itemprop="wordCount" content="1158">
 
 
 
-<meta itemprop="keywords" content="Dfs," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round435ABC"/>
-<meta name="twitter:description" content="Codeforces Round435 Division 2
+<meta itemprop="keywords" content="Math,Greedy," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round473ABCD"/>
+<meta name="twitter:description" content="Codeforces Round473 Division 2
 
 A
 
 Abridge problem statement
 
-給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x
+Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
 
 Solution sketch
 
-將比 x 小的數字補起來，若有 x 則在刪除 x 即可
+直接判奇偶數
 
 "/>
 
@@ -180,10 +180,10 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Round435ABC</h1>
+      <h1 class="post-title">Round473ABCD</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-04-03 </span>
+        <span class="post-time"> 2018-05-26 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
@@ -193,8 +193,8 @@ Solution sketch
               <a href="/codingBlog/categories/division-2/"> Division 2 </a>
             
           </div>
-        <span class="more-meta"> 713 word </span>
-        <span class="more-meta"> 2 min read </span>
+        <span class="more-meta"> 1158 word </span>
+        <span class="more-meta"> 3 min read </span>
         
       </div>
     </header>
@@ -209,7 +209,7 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#codeforces-round435-division-2-http-codeforces-com-contest-862"><a href="http://codeforces.com/contest/862">Codeforces Round435 Division 2</a></a></li>
+<li><a href="#codeforces-round473-division-2-http-codeforces-com-contest-959"><a href="http://codeforces.com/contest/959">Codeforces Round473 Division 2</a></a></li>
 <li><a href="#a">A</a>
 <ul>
 <li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
@@ -228,6 +228,12 @@ Solution sketch
 <li><a href="#solution-sketch-2">Solution sketch</a></li>
 <li><a href="#ac-code-2">AC code</a></li>
 </ul></li>
+<li><a href="#d">D</a>
+<ul>
+<li><a href="#abridge-problem-statement-3">Abridge problem statement</a></li>
+<li><a href="#solution-sketch-3">Solution sketch</a></li>
+<li><a href="#ac-code-3">AC code</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -236,17 +242,17 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="codeforces-round435-division-2-http-codeforces-com-contest-862"><a href="http://codeforces.com/contest/862">Codeforces Round435 Division 2</a></h2>
+      <h2 id="codeforces-round473-division-2-http-codeforces-com-contest-959"><a href="http://codeforces.com/contest/959">Codeforces Round473 Division 2</a></h2>
 
 <h2 id="a">A</h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
-<p>給定 n 個不同的非負整數與 x，可以做的操作有加入或刪除任意的數字，問最少要幾步驟可以讓這串數字第一個缺少的數字是 x</p>
+<p>Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰</p>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>將比 x 小的數字補起來，若有 x 則在刪除 x 即可</p>
+<p>直接判奇偶數</p>
 
 <p></p>
 
@@ -256,24 +262,13 @@ Solution sketch
 using namespace std;
 
 int main(){
-	int n, x, inp;
-	int a[1000] = {0};
+	int n;
+	scanf(&quot; %d&quot;, &amp;n);
 
-	scanf(&quot; %d %d&quot;, &amp;n, &amp;x);
-	for (int i = 0; i &lt; n; i++){
-		scanf(&quot; %d&quot;, &amp;inp);
-		a[inp] = 1;
-	}
-	
-	int cnt = 0;
-	for (int i = 0; i &lt; x; i++){
-		if (a[i] == 0)
-			cnt++;
-	}
-	if (a[x] == 1)
-		cnt++;
-	
-	printf(&quot;%d\n&quot;, cnt);
+	if (n % 2 == 0)
+		printf(&quot;Mahmoud\n&quot;);
+	else
+		printf(&quot;Ehab\n&quot;);
 
 	return 0;
 }
@@ -283,63 +278,56 @@ int main(){
 
 <h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
 
-<p>給定 n 個點，n - 1 條邊，他們構成一個二分圖，問最多可以加幾條邊，使得最後得到的圖還是二分圖</p>
+<p>給定 n 個不同的字，每個字都有屬於自己的分數和 group，在同一個 group 當中的字可以互換，然後給定一串文字，問你說這一串文字最小的分數加總是多少</p>
 
 <h3 id="solution-sketch-1">Solution sketch</h3>
 
-<p>直接跑 dfs 計算一個 set 的個數，接著迭代另一個 set 中的點，看每個點還可以連多少個邊，加總起來及為答案，注意要開 long long</p>
+<p>記錄每一個 group 中最小的值是多少，然後將給定的字串，每個字都換成那個 group 中最小的分數，最後加總起來就是答案了</p>
 
 <h3 id="ac-code-1">AC code</h3>
 
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-vector&lt;int&gt; v[100100], s;
-int n;
-int s1 = 0, s2 = 0;
-bool vis[100100];
-
-void dfs(int x, int ss){
-	vis[x] = true;
-	
-	if (ss == 0){
-		s.push_back(x);
-		s1++;
-	}
-	else
-		s2++;
-	
-	for (int i = 0; i &lt; v[x].size(); i++){
-		if (vis[v[x][i]] == false){
-			if (ss == 0)
-				dfs(v[x][i], 1);
-			else
-				dfs(v[x][i], 0);
-		}
-	}
-}
+char a[100100][25];
+int b[100100];
 
 int main(){
-
-	scanf(&quot; %d&quot;, &amp;n);
+	int n, k, m;
+	scanf(&quot; %d %d %d&quot;, &amp;n, &amp;m, &amp;k);
 	
-	for (int i = 0; i &lt; n - 1; i++){
-		int a, b;
-		scanf(&quot; %d %d&quot;, &amp;a, &amp;b);
-		a--; b--;
-		v[a].push_back(b);
-		v[b].push_back(a);
+	map&lt;string, int&gt; mp1; // string -&gt; group
+	map&lt;int, int&gt; mp2; // group -&gt; min cost
+	for (int i = 0; i &lt; n; i++)
+		scanf(&quot; %s&quot;, a[i]);
+	
+	for (int i = 0; i &lt; n; i++)
+		scanf(&quot; %d&quot;, &amp;b[i]);
+	
+	for (int i = 0; i &lt; m; i++)
+		mp2[i] = 0x3f3f3f3f;
+
+	for (int group_id = 0; group_id &lt; m; group_id++){
+		int group_cnt;
+		scanf(&quot; %d&quot;, &amp;group_cnt);
+		for (int j = 0; j &lt; group_cnt; j++){
+			int x;
+			scanf(&quot; %d&quot;, &amp;x);
+			x--;
+			mp1[a[x]] = group_id;
+			mp2[group_id] = min(mp2[group_id], b[x]);
+		}
 	}
-
-	dfs(0, 0);
-
+	
 	long long int ans = 0;
-	for (int i = 0; i &lt; s.size(); i++){
-		ans += s2 - v[s[i]].size();
+	for (int i = 0; i &lt; k; i++){
+		char x[25];
+		scanf(&quot; %s&quot;, x);
+		ans += mp2[mp1[x]];
 	}
 
 	printf(&quot;%lld\n&quot;, ans);
-
+	
 	return 0;
 }
 </code></pre>
@@ -348,75 +336,137 @@ int main(){
 
 <h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
 
-<p>給定 n 和 x，問說可不可以用 n 個數字 xor 起來組出 x，n 個數字都要小於 1e6</p>
+<p>給定一個錯誤的算法，問你說有沒有辦法找出不符合這個算法的樹，如果沒辦法則輸出 -1，以及符合這個算法的樹，如果有則輸出這個不符合的樹，以及符合這個算法的樹</p>
 
 <h3 id="solution-sketch-2">Solution sketch</h3>
 
-<p>分幾種狀況討論</p>
-
-<ol>
-<li>當 n 等於 1 時，就直接輸出 x</li>
-<li>當 n 等於 2 且 x 等於 0 時，則輸出 NO</li>
-<li>當 n 等於 2 且 x 不等於 0 時，則輸出 0 跟 x</li>
-<li>剩下情況，先將前 n - 3 個做 xor 得到 y，若 y 等於 x 了話，剩下三個則為 pw、pw * 2、pw ^ (pw * 2)，
-pw 為一個超過最大 x(1e5) 以及小於 1e6 的數字，若 y 不等於 x 了話，則剩下三個則為 0、pw、pw ^ y ^ x</li>
-</ol>
+<p>觀察當 n &lt;= 5 的時候，這個算法都會成立，當 n &gt; 5 的時候，不成立的情況是 root 下面接一半個點，剩下一半接在第三層，成立的情況就是 root 下面接剩下全部的點</p>
 
 <h3 id="ac-code-2">AC code</h3>
 
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-int a[1000100];
-
 int main(){
-	int n, x;
-	vector&lt;int&gt; v;
-
-	scanf(&quot; %d %d&quot;, &amp;n, &amp;x);
+	int n;
 	
-	if (n == 1)
-		printf(&quot;YES\n%d\n&quot;, x);
-	else if (n == 2){
-		if (x == 0)
-			printf(&quot;NO\n&quot;);
-		else
-			printf(&quot;YES\n0 %d\n&quot;, x);
+	scanf(&quot; %d&quot;, &amp;n);
+
+	if (n &lt;= 5){
+		printf(&quot;-1\n&quot;);
+		for (int i = 0; i &lt; n - 1; i++)
+			printf(&quot;1 %d\n&quot;, i + 2);
 	}
 	else{
-		printf(&quot;YES\n&quot;);
-		
-		int x_or = 0, pw = 1 &lt;&lt; 18;
-		vector&lt;int&gt; ans;
-		for (int i = 1; i &lt;= n - 3; i++){
-			if (i == 1)
-				x_or = i;
-			else
-				x_or ^= i;
-			ans.push_back(i);
-		}
-
-		if (x_or == x){
-			ans.push_back(pw); ans.push_back(pw * 2); ans.push_back(pw ^ (pw * 2));
-			for (int i = 0; i &lt; ans.size(); i++){
-				if (i == 0)
-					printf(&quot;%d&quot;, ans[i]);
-				else
-					printf(&quot; %d&quot;, ans[i]);
+		int x = n / 2;
+		if (n % 2 == 0){
+			// fail
+			for (int i = 0; i &lt; n / 2; i++){
+				printf(&quot;1 %d\n&quot;, i + 2);
 			}
-			printf(&quot;\n&quot;);
+			for (int i = 0; i &lt; n / 2 - 1; i++){
+				printf(&quot;2 %d\n&quot;, i + n / 2 + 2);
+			}
+
+			// correct
+			for (int i = 0; i &lt; n - 1; i++)
+				printf(&quot;1 %d\n&quot;, i + 2);
 		}
 		else{
-			ans.push_back(0); ans.push_back(pw); ans.push_back(pw ^ x ^ x_or);
-			for (int i = 0; i &lt; ans.size(); i++){
-				if (i == 0)
-					printf(&quot;%d&quot;, ans[i]);
-				else
-					printf(&quot; %d&quot;, ans[i]);
+			// fail
+			for (int i = 0; i &lt; n / 2; i++){
+				printf(&quot;1 %d\n&quot;, i + 2);
+				printf(&quot;2 %d\n&quot;, i + 2 + n / 2);
 			}
-			printf(&quot;\n&quot;);
+
+			// correct
+			for (int i = 0; i &lt; n - 1; i++)
+				printf(&quot;1 %d\n&quot;, i + 2);
 		}
 	}
+
+	return 0;
+}
+</code></pre>
+
+<h2 id="d">D</h2>
+
+<h3 id="abridge-problem-statement-3">Abridge problem statement</h3>
+
+<p>給出一個長度為 n 的陣列 a，要你構造出滿足下面三個條件且長度也為 n 的陣列 b:</p>
+
+<ol>
+<li>陣列 b 的字典序要大於等於 a</li>
+<li>陣列 b 中的任意元素大於等於 2</li>
+<li>陣列 b 中的任意兩個元素要互質</li>
+</ol>
+
+<p>同時題目要求 b 的字典序盡可能的小</p>
+
+<h3 id="solution-sketch-3">Solution sketch</h3>
+
+<p>能不改就不改，但是一但改了以後，後面的都要改，具體而言，就是從前往後掃，如果當前位置的數不與前面的衝突了話，我們就不動他。但是如果有一個數衝突了，那根據題意，我們得換一個更大的數，這時整體的字典序就比原本的還大了，因此後面的數就要盡可能的小</p>
+
+<h3 id="ac-code-3">AC code</h3>
+
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+const int MAX_N = 1500000;
+vector&lt;int&gt; num[MAX_N];
+bool used[MAX_N], divisor[MAX_N];
+set&lt;int&gt; s;
+
+void init(){
+	fill(divisor, divisor + MAX_N, true);
+	divisor[0] = divisor[1] = false;
+	for (int i = 2; i &lt; MAX_N; i++){
+		if (divisor[i]){
+			for (int j = i; j &lt; MAX_N; j += i){
+				divisor[j] = false;
+				num[j].push_back(i); // j 這個數的因數有誰
+			}
+		}
+		s.insert(i); // 2 ~ n 的值都可以
+	}
+}
+
+int main(){
+	init();
+	
+	int n, cnt = 0;
+	scanf(&quot; %d&quot;, &amp;n);
+	
+	bool is_big = false;
+	vector&lt;int&gt; ans;
+	for (int i = 0; i &lt; n; i++){
+		int a, b;
+		scanf(&quot; %d&quot;, &amp;a);
+		b = *s.begin();
+		if (!is_big){
+			b = *s.lower_bound(a); // 找目前合法且第一個大於等於 b 的數
+			if (a != b)
+				is_big = true;
+		}
+
+		ans.push_back(b);
+		for (auto j: num[b]){ // 將 b 有的因數從 s 中移除
+			if (!used[j]){
+				for (int k = j; k &lt; MAX_N; k += j){
+					used[k] = true;
+					s.erase(k);
+				}
+			}
+		}
+	}
+
+	for (int i = 0; i &lt; n; i++){
+		if (i == 0)
+			printf(&quot;%d&quot;, ans[i]);
+		else
+			printf(&quot; %d&quot;, ans[i]);
+	}
+	printf(&quot;\n&quot;);
 
 	return 0;
 }
@@ -432,7 +482,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-04-03</span>
+    <span class="item-content">2018-05-26</span>
   </p>
   
   <p class="copyright-item">
@@ -447,21 +497,18 @@ int main(){
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/dfs/">Dfs</a>
+          <a href="/codingBlog/tags/math/">Math</a>
+          
+          <a href="/codingBlog/tags/greedy/">Greedy</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round473abcd/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round473ABCD</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round442abcd/">
-            <span class="next-text nav-default">Round442ABCD</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round435abc/">
+            <span class="next-text nav-default">Round435ABC</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
