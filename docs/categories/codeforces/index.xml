@@ -6,10 +6,31 @@
     <description>Recent content in Codeforces on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 May 2018 19:20:20 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 May 2018 10:55:41 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/categories/codeforces/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round480ABC</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round480abc/</link>
+      <pubDate>Tue, 29 May 2018 10:55:41 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round480abc/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round480-division-2-http-codeforces-com-contest-980&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/980&#34;&gt;Codeforces Round480 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round473ABCD</title>

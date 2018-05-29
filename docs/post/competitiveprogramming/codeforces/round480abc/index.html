@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Round473ABCD - Coding Blog</title>
+  <title>Round480ABC - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,8 +17,8 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Codeforces Round473 Division 2 A Abridge problem statement Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
-Solution sketch 直接判奇偶數
+  <meta name="description" content="Codeforces Round480 Division 2 A Abridge problem statement 給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同
+Solution sketch 看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES
 
 " />
 
@@ -32,7 +32,7 @@ Solution sketch 直接判奇偶數
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round480abc/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -50,31 +50,27 @@ Solution sketch 直接判奇偶數
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Round473ABCD" />
-<meta property="og:description" content="Codeforces Round473 Division 2
+<meta property="og:title" content="Round480ABC" />
+<meta property="og:description" content="Codeforces Round480 Division 2
 
 A
 
 Abridge problem statement
 
-Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
+給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同
 
 Solution sketch
 
-直接判奇偶數
+看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round473abcd/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round480abc/" />
 
 
 
-<meta property="article:published_time" content="2018-05-26T19:20:20&#43;08:00"/>
-<meta property="article:modified_time" content="2018-05-26T19:20:20&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2018-05-29T10:55:41&#43;08:00"/>
+<meta property="article:modified_time" content="2018-05-29T10:55:41&#43;08:00"/>
 
 
 
@@ -82,40 +78,44 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="Round473ABCD">
-<meta itemprop="description" content="Codeforces Round473 Division 2
+
+
+
+
+<meta itemprop="name" content="Round480ABC">
+<meta itemprop="description" content="Codeforces Round480 Division 2
 
 A
 
 Abridge problem statement
 
-Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
+給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同
 
 Solution sketch
 
-直接判奇偶數
+看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES
 
 ">
 
 
-<meta itemprop="dateModified" content="2018-05-26T19:20:20&#43;08:00" />
-<meta itemprop="wordCount" content="1158">
+<meta itemprop="dateModified" content="2018-05-29T10:55:41&#43;08:00" />
+<meta itemprop="wordCount" content="1146">
 
 
 
 <meta itemprop="keywords" content="Math,Greedy," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round473ABCD"/>
-<meta name="twitter:description" content="Codeforces Round473 Division 2
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Round480ABC"/>
+<meta name="twitter:description" content="Codeforces Round480 Division 2
 
 A
 
 Abridge problem statement
 
-Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰
+給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同
 
 Solution sketch
 
-直接判奇偶數
+看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES
 
 "/>
 
@@ -180,10 +180,10 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Round473ABCD</h1>
+      <h1 class="post-title">Round480ABC</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-05-26 </span>
+        <span class="post-time"> 2018-05-29 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
@@ -193,7 +193,7 @@ Solution sketch
               <a href="/codingBlog/categories/division-2/"> Division 2 </a>
             
           </div>
-        <span class="more-meta"> 1158 word </span>
+        <span class="more-meta"> 1146 word </span>
         <span class="more-meta"> 3 min read </span>
         
       </div>
@@ -209,7 +209,7 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#codeforces-round473-division-2-http-codeforces-com-contest-959"><a href="http://codeforces.com/contest/959">Codeforces Round473 Division 2</a></a></li>
+<li><a href="#codeforces-round480-division-2-http-codeforces-com-contest-980"><a href="http://codeforces.com/contest/980">Codeforces Round480 Division 2</a></a></li>
 <li><a href="#a">A</a>
 <ul>
 <li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
@@ -228,12 +228,6 @@ Solution sketch
 <li><a href="#solution-sketch-2">Solution sketch</a></li>
 <li><a href="#ac-code-2">AC code</a></li>
 </ul></li>
-<li><a href="#d">D</a>
-<ul>
-<li><a href="#abridge-problem-statement-3">Abridge problem statement</a></li>
-<li><a href="#solution-sketch-3">Solution sketch</a></li>
-<li><a href="#ac-code-3">AC code</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -242,17 +236,17 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="codeforces-round473-division-2-http-codeforces-com-contest-959"><a href="http://codeforces.com/contest/959">Codeforces Round473 Division 2</a></h2>
+      <h2 id="codeforces-round480-division-2-http-codeforces-com-contest-980"><a href="http://codeforces.com/contest/980">Codeforces Round480 Division 2</a></h2>
 
 <h2 id="a">A</h2>
 
 <h3 id="abridge-problem-statement">Abridge problem statement</h3>
 
-<p>Mahmoud 和 Ehab 在玩一個遊戲，給定一個數字 n，每次輪到 Mahmoud 時，剩下的數字必須是偶數，否則 Mahmoud 就輸了，輪到 Ehab 時，剩下的數字必須是奇數，否則Ehab 就輸了，每個人每次的操作可以拿任意 1 到 n 之間的數，問說給定一個數字 n，最後贏的會是誰</p>
+<p>給定一堆的 links 和 pearls 問說可不可以任意移動 link 或 pearl，使得相鄰的兩個 pearl 之間的 link 數目相同</p>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>直接判奇偶數</p>
+<p>看 pearl 數可不可以整除 link 數，可以則輸出 YES，否則輸出 NO，注意當 pearl 為零的時候，輸出 YES</p>
 
 <p></p>
 
@@ -262,13 +256,24 @@ Solution sketch
 using namespace std;
 
 int main(){
-	int n;
-	scanf(&quot; %d&quot;, &amp;n);
+	char a[1000];
+	scanf(&quot; %s&quot;, a);
 
-	if (n % 2 == 0)
-		printf(&quot;Mahmoud\n&quot;);
+	int len = strlen(a), cnt_link = 0, cnt_pearl = 0;
+	for (int i = 0; i &lt; len; i++){
+		if (a[i] == '-')
+			cnt_link++;
+		else
+			cnt_pearl++;
+	}
+	if (cnt_pearl == 0){
+		printf(&quot;YES\n&quot;);
+		return 0;
+	}
+	if (cnt_link % cnt_pearl != 0)
+		printf(&quot;NO\n&quot;);
 	else
-		printf(&quot;Ehab\n&quot;);
+		printf(&quot;YES\n&quot;);
 
 	return 0;
 }
@@ -278,55 +283,83 @@ int main(){
 
 <h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
 
-<p>給定 n 個不同的字，每個字都有屬於自己的分數和 group，在同一個 group 當中的字可以互換，然後給定一串文字，問你說這一串文字最小的分數加總是多少</p>
+<p>給定一個 4 * n 的地圖，n 為奇數，左上角 (1, 1) 為村子，要去右下角 (4, n) 的魚塘抓魚，左下角 (4, 1) 為村子，要去右上角 (1, n) 的魚塘抓魚，現在有 k 間旅館，問說如何設置這 k 間旅館，且旅館不能放在邊界上，使得左上角的村子到右下角的魚塘的最短路徑數與左下角的村子到右上角的魚塘的最短路徑數相等</p>
 
 <h3 id="solution-sketch-1">Solution sketch</h3>
 
-<p>記錄每一個 group 中最小的值是多少，然後將給定的字串，每個字都換成那個 group 中最小的分數，最後加總起來就是答案了</p>
+<p>考慮 k 為奇數偶數的情況
+1. k 為偶數的時候，只需順著 col 擺滿即可
+2. k 為奇數的時候，從 row = 1 然後從 col 中間開始往兩側擺，若擺滿還有剩，則往下一個 row 擺，也是一樣從中間往兩側擺，但中間那個不能擺放，因為當 k 為奇數的時候，若第一個 row 擺滿還有剩下了話，那剩下的數目一定為偶數</p>
 
 <h3 id="ac-code-1">AC code</h3>
 
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-char a[100100][25];
-int b[100100];
-
 int main(){
-	int n, k, m;
-	scanf(&quot; %d %d %d&quot;, &amp;n, &amp;m, &amp;k);
-	
-	map&lt;string, int&gt; mp1; // string -&gt; group
-	map&lt;int, int&gt; mp2; // group -&gt; min cost
-	for (int i = 0; i &lt; n; i++)
-		scanf(&quot; %s&quot;, a[i]);
-	
-	for (int i = 0; i &lt; n; i++)
-		scanf(&quot; %d&quot;, &amp;b[i]);
-	
-	for (int i = 0; i &lt; m; i++)
-		mp2[i] = 0x3f3f3f3f;
+	int n, k;
+	scanf(&quot; %d %d&quot;, &amp;n, &amp;k);
 
-	for (int group_id = 0; group_id &lt; m; group_id++){
-		int group_cnt;
-		scanf(&quot; %d&quot;, &amp;group_cnt);
-		for (int j = 0; j &lt; group_cnt; j++){
-			int x;
-			scanf(&quot; %d&quot;, &amp;x);
-			x--;
-			mp1[a[x]] = group_id;
-			mp2[group_id] = min(mp2[group_id], b[x]);
+	char a[110][110];
+	for (int i = 0; i &lt; 4; i++)
+		for (int j = 0; j &lt; n; j++)
+			a[i][j] = '.';
+	
+	if (k % 2 == 0){
+		printf(&quot;YES\n&quot;);
+		for (int j = 1; j &lt; n - 1; j++){
+			for (int i = 1; i &lt; 3; i++){
+				if (k == 0)
+					break;
+				a[i][j] = '#';
+				k--;
+			}
+			if (k == 0)
+				break;
+		}
+
+		for (int i = 0; i &lt; 4; i++){
+			for (int j = 0; j &lt; n; j++){
+				printf(&quot;%c&quot;, a[i][j]);
+			}
+			printf(&quot;\n&quot;);
 		}
 	}
-	
-	long long int ans = 0;
-	for (int i = 0; i &lt; k; i++){
-		char x[25];
-		scanf(&quot; %s&quot;, x);
-		ans += mp2[mp1[x]];
+	else{
+		printf(&quot;YES\n&quot;);
+		int x = n / 2, y = 0;
+		while(1){
+			if (k == 0)
+				break;
+			if (x + y &gt;= n - 1)
+				break;
+			a[1][x + y] = '#';
+			a[1][x - y] = '#';
+			if (x + y == x - y)
+				k--;
+			else
+				k -= 2;
+			y++;
+		}
+		if (k &gt; 0){
+			y = 1;
+			while(1){
+				if (k == 0)
+					break;
+				a[2][x + y] = '#';
+				a[2][x - y] = '#';
+				k -= 2;
+				y++;
+			}
+		}
+		
+		for (int i = 0; i &lt; 4; i++){
+			for (int j = 0; j &lt; n; j++){
+				printf(&quot;%c&quot;, a[i][j]);
+			}
+			printf(&quot;\n&quot;);
+		}
 	}
-
-	printf(&quot;%lld\n&quot;, ans);
 	
 	return 0;
 }
@@ -336,11 +369,16 @@ int main(){
 
 <h3 id="abridge-problem-statement-2">Abridge problem statement</h3>
 
-<p>給定一個錯誤的算法，問你說有沒有辦法找出不符合這個算法的樹，如果沒辦法則輸出 -1，以及符合這個算法的樹，如果有則輸出這個不符合的樹，以及符合這個算法的樹</p>
+<p>給定 n 個數字代表像素的顏色，範圍 [0, 255]，你可以將值相鄰的若干個數字分成一組，之後在同一組內的數字都可以變成最小的那個，且要求每個組的長度不能超過 k，問如何分組使得新的 n 個數字照前述的規則變換後，使得新的序列的字典序最小</p>
 
 <h3 id="solution-sketch-2">Solution sketch</h3>
 
-<p>觀察當 n &lt;= 5 的時候，這個算法都會成立，當 n &gt; 5 的時候，不成立的情況是 root 下面接一半個點，剩下一半接在第三層，成立的情況就是 root 下面接剩下全部的點</p>
+<p>greedy 的想法：</p>
+
+<ol>
+<li>如果現在這個數沒有被分組了話，就往前找盡可能的小，小心，如果前面已經有組別，但加上目前這整個長度，若沒有超過 k，則這跟前面那個組合並</li>
+<li>如果這個數字已經被分組了話，則直接輸出這組最小的那個數</li>
+</ol>
 
 <h3 id="ac-code-2">AC code</h3>
 
@@ -348,116 +386,69 @@ int main(){
 using namespace std;
 
 int main(){
-	int n;
-	
-	scanf(&quot; %d&quot;, &amp;n);
+	int n, k;
+	scanf(&quot; %d %d&quot;, &amp;n, &amp;k);
 
-	if (n &lt;= 5){
-		printf(&quot;-1\n&quot;);
-		for (int i = 0; i &lt; n - 1; i++)
-			printf(&quot;1 %d\n&quot;, i + 2);
-	}
-	else{
-		int x = n / 2;
-		if (n % 2 == 0){
-			// fail
-			for (int i = 0; i &lt; n / 2; i++){
-				printf(&quot;1 %d\n&quot;, i + 2);
-			}
-			for (int i = 0; i &lt; n / 2 - 1; i++){
-				printf(&quot;2 %d\n&quot;, i + n / 2 + 2);
-			}
-
-			// correct
-			for (int i = 0; i &lt; n - 1; i++)
-				printf(&quot;1 %d\n&quot;, i + 2);
-		}
-		else{
-			// fail
-			for (int i = 0; i &lt; n / 2; i++){
-				printf(&quot;1 %d\n&quot;, i + 2);
-				printf(&quot;2 %d\n&quot;, i + 2 + n / 2);
-			}
-
-			// correct
-			for (int i = 0; i &lt; n - 1; i++)
-				printf(&quot;1 %d\n&quot;, i + 2);
-		}
-	}
-
-	return 0;
-}
-</code></pre>
-
-<h2 id="d">D</h2>
-
-<h3 id="abridge-problem-statement-3">Abridge problem statement</h3>
-
-<p>給出一個長度為 n 的陣列 a，要你構造出滿足下面三個條件且長度也為 n 的陣列 b:</p>
-
-<ol>
-<li>陣列 b 的字典序要大於等於 a</li>
-<li>陣列 b 中的任意元素大於等於 2</li>
-<li>陣列 b 中的任意兩個元素要互質</li>
-</ol>
-
-<p>同時題目要求 b 的字典序盡可能的小</p>
-
-<h3 id="solution-sketch-3">Solution sketch</h3>
-
-<p>能不改就不改，但是一但改了以後，後面的都要改，具體而言，就是從前往後掃，如果當前位置的數不與前面的衝突了話，我們就不動他。但是如果有一個數衝突了，那根據題意，我們得換一個更大的數，這時整體的字典序就比原本的還大了，因此後面的數就要盡可能的小</p>
-
-<h3 id="ac-code-3">AC code</h3>
-
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-const int MAX_N = 1500000;
-vector&lt;int&gt; num[MAX_N];
-bool used[MAX_N], divisor[MAX_N];
-set&lt;int&gt; s;
-
-void init(){
-	fill(divisor, divisor + MAX_N, true);
-	divisor[0] = divisor[1] = false;
-	for (int i = 2; i &lt; MAX_N; i++){
-		if (divisor[i]){
-			for (int j = i; j &lt; MAX_N; j += i){
-				divisor[j] = false;
-				num[j].push_back(i); // j 這個數的因數有誰
-			}
-		}
-		s.insert(i); // 2 ~ n 的值都可以
-	}
-}
-
-int main(){
-	init();
-	
-	int n, cnt = 0;
-	scanf(&quot; %d&quot;, &amp;n);
-	
-	bool is_big = false;
-	vector&lt;int&gt; ans;
+	int a[100010], color[256];
 	for (int i = 0; i &lt; n; i++){
-		int a, b;
-		scanf(&quot; %d&quot;, &amp;a);
-		b = *s.begin();
-		if (!is_big){
-			b = *s.lower_bound(a); // 找目前合法且第一個大於等於 b 的數
-			if (a != b)
-				is_big = true;
+		scanf(&quot; %d&quot;, &amp;a[i]);
+	}
+	
+	fill(color, color + 256, -1);
+	
+	vector&lt;int&gt; ans;
+	color[0] = 0;
+	for (int i = 0; i &lt; n; i++){
+		if (color[a[i]] != -1){ // in the group
+			ans.push_back(color[a[i]]);
+			continue;
 		}
 
-		ans.push_back(b);
-		for (auto j: num[b]){ // 將 b 有的因數從 s 中移除
-			if (!used[j]){
-				for (int k = j; k &lt; MAX_N; k += j){
-					used[k] = true;
-					s.erase(k);
+		bool ch = false;
+		for (int j = 0; j &lt; k; j++){
+			if (a[i] - j &lt; 0)
+				break;
+			if (color[a[i] - j] != -1){
+				int temp = a[i] - j - 1, cnt = 1;
+				for (int l = temp; l &gt;= 0; l--){
+					if (color[l] != color[a[i] - j])
+						break;
+					else
+						cnt++;
+				}
+				
+				if (cnt + j &lt;= k){ // 跟前面的 group 合併
+					for (int l = 0; l &lt; k; l++){
+						if (a[i] - l &gt;= 0 &amp;&amp; color[a[i] - l] != color[a[i] - j])
+							color[a[i] - l] = color[a[i] - j];
+						else
+							break;
+					}
+					ch = true;
+				}
+				else{
+					for (int l = j - 1; l &gt;= 0; l--){ // 往前找到第一個不是 -1 的合併
+						if (a[i] - l &lt; 0)
+							break;
+						color[a[i] - l] = a[i] - j + 1;
+					}
+					ch = true;
 				}
 			}
+			else{
+				if (j == k - 1){ // 往前找到第一個不是 -1 的合併
+					for (int l = 0; l &lt; k; l++){
+						if (a[i] - l &lt; 0)
+							break;
+						color[a[i] - l] = a[i] - j;
+					}
+				}
+			}
+			if (ch)
+				break;
 		}
+
+		ans.push_back(color[a[i]]);
 	}
 
 	for (int i = 0; i &lt; n; i++){
@@ -482,7 +473,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-05-26</span>
+    <span class="item-content">2018-05-29</span>
   </p>
   
   <p class="copyright-item">
@@ -506,14 +497,9 @@ int main(){
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round480abc/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round480ABC</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round435abc/">
-            <span class="next-text nav-default">Round435ABC</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round473abcd/">
+            <span class="next-text nav-default">Round473ABCD</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
