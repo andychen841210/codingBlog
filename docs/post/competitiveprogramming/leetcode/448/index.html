@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>448. Find All Numbers Disappeared in an Array - Coding Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="andychen" />
+  <meta name="description" content="LeetCode 448 Abridge problem statement Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once. Find all the elements of [1, n] inclusive that do not appear in this array. Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+Solution sketch 因為範圍保證從 1 到 n， 所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數， 表示這個位置有出現在這個陣列當中， 接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可， 時間複雜度 O(n)，空間複雜度 O(1)
+
+" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+<meta name="google-site-verification" content="FuwyG1La_DaZH-n3M2NtQYJYF5GYtRVtthFpCVWuoaU" />
+
+
+<meta name="generator" content="Hugo 0.29" />
+
+
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/leetcode/448/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/codingBlog/favicon-16x16.png">
+<link rel="icon" href="/codingBlog/favicon.ico" />
+<link rel="manifest" href="/codingBlog/manifest.json">
+<link rel="mask-icon" href="/codingBlog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="448. Find All Numbers Disappeared in an Array" />
+<meta property="og:description" content="LeetCode 448
+
+Abridge problem statement
+
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+
+Solution sketch
+
+因為範圍保證從 1 到 n，
+所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數，
+表示這個位置有出現在這個陣列當中，
+接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可，
+時間複雜度 O(n)，空間複雜度 O(1)
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/leetcode/448/" />
+
+
+
+<meta property="article:published_time" content="2018-09-14T11:16:58&#43;08:00"/>
+<meta property="article:modified_time" content="2018-09-14T11:16:58&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="448. Find All Numbers Disappeared in an Array">
+<meta itemprop="description" content="LeetCode 448
+
+Abridge problem statement
+
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+
+Solution sketch
+
+因為範圍保證從 1 到 n，
+所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數，
+表示這個位置有出現在這個陣列當中，
+接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可，
+時間複雜度 O(n)，空間複雜度 O(1)
+
+">
+
+
+<meta itemprop="dateModified" content="2018-09-14T11:16:58&#43;08:00" />
+<meta itemprop="wordCount" content="383">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="448. Find All Numbers Disappeared in an Array"/>
+<meta name="twitter:description" content="LeetCode 448
+
+Abridge problem statement
+
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+
+Solution sketch
+
+因為範圍保證從 1 到 n，
+所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數，
+表示這個位置有出現在這個陣列當中，
+接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可，
+時間複雜度 O(n)，空間複雜度 O(1)
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/codingBlog/" class="logo">Coding Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/codingBlog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/codingBlog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/codingBlog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/codingBlog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/codingBlog/" class="logo">Coding Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">448. Find All Numbers Disappeared in an Array</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-09-14 </span>
+        <div class="post-category">
+            
+              <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
+            
+              <a href="/codingBlog/categories/leetcode/"> LeetCode </a>
+            
+          </div>
+        <span class="more-meta"> 383 word </span>
+        <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#leetcode-448-https-leetcode-com-problems-find-all-numbers-disappeared-in-an-array-description"><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/">LeetCode 448</a></a>
+<ul>
+<li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
+<li><a href="#solution-sketch">Solution sketch</a></li>
+<li><a href="#ac-code">AC code</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="leetcode-448-https-leetcode-com-problems-find-all-numbers-disappeared-in-an-array-description"><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/">LeetCode 448</a></h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>因為範圍保證從 1 到 n，
+所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數，
+表示這個位置有出現在這個陣列當中，
+接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可，
+時間複雜度 O(n)，空間複雜度 O(1)</p>
+
+<p></p>
+
+<h3 id="ac-code">AC code</h3>
+
+<pre><code class="language-cpp">// :%s/^ \* //g
+#ifdef LOCAL
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+// define data structures here
+#endif
+
+static int __initialSetup = [](){
+	std::ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	return 0;
+}
+();
+
+// 因為範圍保證從 1 到 n
+// 所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數
+// 表示這個位置有出現在這個陣列當中
+// 接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可
+// 時間複雜度 O(n)，空間複雜度 O(1)
+class Solution {
+	public:
+	    vector&lt;int&gt; findDisappearedNumbers(vector&lt;int&gt;&amp; nums) {
+			for (auto i : nums){
+				if (nums[abs(i) - 1] &gt; 0)
+					nums[abs(i) - 1] = -nums[abs(i) - 1];
+			}
+
+			vector&lt;int&gt; ans;
+			for (int i = 0; i &lt; (int) nums.size(); i++){
+				if (nums[i] &gt; 0)
+					ans.push_back(i + 1);
+			}
+
+			return ans;
+		}
+};
+
+#ifdef LOCAL
+int main(){
+	return 0;
+}
+#endif
+</code></pre>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">andychen</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-09-14</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round480abc/">
+            <span class="next-text nav-default">Round480ABC</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'github-page-blog';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/andychen841210?tab=repositories" class="iconfont icon-github" title="github"></a>
+  <a href="https://andychen841210.github.io/codingBlog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">andychen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/codingBlog/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/codingBlog/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/codingBlog/dist/even.min.js?v=2.7.2"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

@@ -6,10 +6,35 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 May 2018 10:55:41 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Sep 2018 11:16:58 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>448. Find All Numbers Disappeared in an Array</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/leetcode/448/</link>
+      <pubDate>Fri, 14 Sep 2018 11:16:58 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/leetcode/448/</guid>
+      <description>&lt;h2 id=&#34;leetcode-448-https-leetcode-com-problems-find-all-numbers-disappeared-in-an-array-description&#34;&gt;&lt;a href=&#34;https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/&#34;&gt;LeetCode 448&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;因為範圍保證從 1 到 n，
+所以我們可以用陣列的值去對應他的位置，並將這個位置的值改成負數，
+表示這個位置有出現在這個陣列當中，
+接著只要看哪個位置的值是正數，表示缺少在陣列當中，並把它加到答案中即可，
+時間複雜度 O(n)，空間複雜度 O(1)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round480ABC</title>
