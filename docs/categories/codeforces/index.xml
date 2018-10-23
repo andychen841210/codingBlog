@@ -6,10 +6,31 @@
     <description>Recent content in Codeforces on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 May 2018 10:55:41 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 23:27:30 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/categories/codeforces/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round514C</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round514c/</link>
+      <pubDate>Tue, 23 Oct 2018 23:27:30 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round514c/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round514-division-2-http-codeforces-com-contest-1059&#34;&gt;&lt;a href=&#34;http://codeforces.com/contest/1059&#34;&gt;Codeforces Round514 Division 2&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;c&#34;&gt;C&lt;/h2&gt;
+
+&lt;h3 id=&#34;abridge-problem-statement&#34;&gt;Abridge problem statement&lt;/h3&gt;
+
+&lt;p&gt;給定一個 n，第一次輸出 1 ~ n 的 gcd，接著從中刪除一個數，接著數出這 n - 1 個數的 gcd，再刪除一個數，再輸出剩下數的 gcd，直到輸出 n 個 gcd，要求輸出字典序最大的數列&lt;/p&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;對於一個 n，為了使字典序最大，所以越早輸出 2 越好，因此先把奇數全部去掉，並輸出 (n + 1) / 2 個 1，接著剩下的偶數，就可以將他們全部除以 2，接著刪除掉奇數的部分，並且輸出 2，因為他們都除過 2 了，接著再對剩下的偶數做同樣的操作，要特別判斷 n == 3 的情況即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round480ABC</title>
