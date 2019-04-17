@@ -6,10 +6,27 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Oct 2018 23:27:30 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 10:34:10 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contest123</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/</link>
+      <pubDate>Wed, 17 Apr 2019 10:34:10 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/</guid>
+      <description>&lt;h2 id=&#34;contest123-https-atcoder-jp-contests-abc123&#34;&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc123&#34;&gt;Contest123&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;d&#34;&gt;D&lt;/h2&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round514C</title>

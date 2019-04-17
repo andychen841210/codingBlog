@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>GCJ2017QualificationRoundB - Coding Blog</title>
+  <title>Contest123 - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,9 +17,8 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Tidy Numbers Abridge problem statement 定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
-Solution sketch 可觀察出一些特性:
- 若 N 本身就是 tidy，就答案就是 N 否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9 最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉  
+  <meta name="description" content="Contest123 D Solution sketch 做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
+
 " />
 
   <meta name="keywords" content="Hugo, theme, even" />
@@ -32,7 +31,7 @@ Solution sketch 可觀察出一些特性:
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -50,35 +49,23 @@ Solution sketch 可觀察出一些特性:
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="GCJ2017QualificationRoundB" />
-<meta property="og:description" content="Tidy Numbers
+<meta property="og:title" content="Contest123" />
+<meta property="og:description" content="Contest123
 
-Abridge problem statement
-
-定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+D
 
 Solution sketch
 
-可觀察出一些特性:
-
-
-若 N 本身就是 tidy，就答案就是 N
-否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
-最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
-
+做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/" />
 
 
 
-<meta property="article:published_time" content="2018-01-28T21:34:41&#43;08:00"/>
-<meta property="article:modified_time" content="2018-01-28T21:34:41&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2019-04-17T10:34:10&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-17T10:34:10&#43;08:00"/>
 
 
 
@@ -86,48 +73,36 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="GCJ2017QualificationRoundB">
-<meta itemprop="description" content="Tidy Numbers
 
-Abridge problem statement
 
-定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+
+
+<meta itemprop="name" content="Contest123">
+<meta itemprop="description" content="Contest123
+
+D
 
 Solution sketch
 
-可觀察出一些特性:
-
-
-若 N 本身就是 tidy，就答案就是 N
-否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
-最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
-
+做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
 
 ">
 
 
-<meta itemprop="dateModified" content="2018-01-28T21:34:41&#43;08:00" />
-<meta itemprop="wordCount" content="497">
+<meta itemprop="dateModified" content="2019-04-17T10:34:10&#43;08:00" />
+<meta itemprop="wordCount" content="303">
 
 
 
-<meta itemprop="keywords" content="Greedy," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="GCJ2017QualificationRoundB"/>
-<meta name="twitter:description" content="Tidy Numbers
+<meta itemprop="keywords" content="Bfs," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Contest123"/>
+<meta name="twitter:description" content="Contest123
 
-Abridge problem statement
-
-定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？
+D
 
 Solution sketch
 
-可觀察出一些特性:
-
-
-若 N 本身就是 tidy，就答案就是 N
-否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9
-最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉
-
+做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
 
 "/>
 
@@ -192,18 +167,18 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">GCJ2017QualificationRoundB</h1>
+      <h1 class="post-title">Contest123</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-01-28 </span>
+        <span class="post-time"> 2019-04-17 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
             
-              <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
+              <a href="/codingBlog/categories/atcoder/"> AtCoder </a>
             
           </div>
-        <span class="more-meta"> 497 word </span>
+        <span class="more-meta"> 303 word </span>
         <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -219,9 +194,9 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></a>
+<li><a href="#contest123-https-atcoder-jp-contests-abc123"><a href="https://atcoder.jp/contests/abc123">Contest123</a></a></li>
+<li><a href="#d">D</a>
 <ul>
-<li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
 <li><a href="#solution-sketch">Solution sketch</a></li>
 <li><a href="#ac-code">AC code</a></li>
 </ul></li>
@@ -233,21 +208,13 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></h2>
+      <h2 id="contest123-https-atcoder-jp-contests-abc123"><a href="https://atcoder.jp/contests/abc123">Contest123</a></h2>
 
-<h3 id="abridge-problem-statement">Abridge problem statement</h3>
-
-<p>定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？</p>
+<h2 id="d">D</h2>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>可觀察出一些特性:</p>
-
-<ol>
-<li>若 N 本身就是 tidy，就答案就是 N</li>
-<li>否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9</li>
-<li>最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</li>
-</ol>
+<p>做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可</p>
 
 <p></p>
 
@@ -256,86 +223,66 @@ Solution sketch
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-char s[100];
+struct Node{
+    long long int sum;
+    int x, y, z;
+
+    bool operator &lt; (const Node &amp;node) const{
+        return sum &lt; node.sum;
+    }
+};
 
 int main(){
-	int T;
-	
-	scanf(&quot; %d&quot;, &amp;T);
-	
-	for (int k = 0; k &lt; T; k++){
-		scanf(&quot; %s&quot;, s);
-		
-		int l = strlen(s);
-		bool t = true;
-		for (int i = 1; i &lt; l; i++){
-			if (s[i] &lt; s[i - 1]){
-				t = false;
-				break;
-			}
-		}
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    
+    int x, y, z, k;
+    cin &gt;&gt; x &gt;&gt; y &gt;&gt; z &gt;&gt; k;
 
-		if (t){
-			printf(&quot;Case #%d: %s\n&quot;, k + 1, s);
-			continue;
-		}
-		
-		int same = 0, first = 0, change = 0;
-		for (int i = 1; i &lt; l; i++){
-			if (s[i] &lt; s[i - 1]){
-				if (first == 0){
-					change = i - 1;
-					same = -1;
-				}
-				else{
-					change = i - 1;
-				}
-				break;
-			}
-			if (s[i] == s[i - 1] &amp;&amp; first == 0){
-				same = i - 1;
-				first = 1;
-				change = i;
-			}
-			if (s[i] &gt; s[i - 1]){
-				change = i;
-				first = 0;
-			}
-		}
+    long long int a[2000], b[2000], c[2000];
+    for (int i = 0; i &lt; x; i++)
+        cin &gt;&gt; a[i];
 
-		if (same == -1){
-			for (int i = change; i &lt; l; i++){
-				if (i == change)
-					s[i] = s[i] - 1;
-				else
-					s[i] = '9';
-			}
-		}
-		else{
-			for (int i = same; i &lt; l; i++){
-				if (i == same)
-					s[i] = s[i] - 1;
-				else
-					s[i] = '9';
-			}
-		}
+    for (int i = 0; i &lt; y; i++)
+        cin &gt;&gt; b[i];
 
-		int st = 0;
-		for (int i = 0; i &lt; l; i++){
-			if (s[i] != '0'){
-				st = i;
-				break;
-			}
-		}
+    for (int i = 0; i &lt; z; i++)
+        cin &gt;&gt; c[i];
 
-		printf(&quot;Case #%d: &quot;, k + 1);
-		for (int i = st; i &lt; l; i++)
-			printf(&quot;%c&quot;, s[i]);
-		printf(&quot;\n&quot;);
+    sort(a, a + x);
+    sort(b, b + y);
+    sort(c, c + z);
+    
+    priority_queue&lt;Node&gt; pq;
+    set&lt;pair&lt;int, pair&lt;int,int&gt;&gt; &gt; s;
+    pq.push({a[x - 1] + b[y - 1] + c[z - 1], x - 1, y - 1, z - 1});
+    s.insert({x - 1, {y - 1, z - 1}});
+    
+    for (int i = 0; i &lt; k; i++){
+        Node n = pq.top(); pq.pop();
+        cout &lt;&lt; n.sum &lt;&lt; '\n';
 
-	}
+        if (n.x &gt; 0){
+            if (s.find({n.x - 1, {n.y, n.z}}) == s.end()){
+                pq.push({a[n.x - 1] + b[n.y] + c[n.z], n.x - 1, n.y, n.z});
+                s.insert({n.x - 1, {n.y, n.z}});
+            }
+        }
+        if (n.y &gt; 0){
+            if (s.find({n.x, {n.y - 1, n.z}}) == s.end()){
+                pq.push({a[n.x] + b[n.y - 1] + c[n.z], n.x, n.y - 1, n.z});
+                s.insert({n.x, {n.y - 1, n.z}});
+            }
+        }
+        if (n.z &gt; 0){
+            if (s.find({n.x, {n.y, n.z - 1}}) == s.end()){
+                pq.push({a[n.x] + b[n.y] + c[n.z - 1], n.x, n.y, n.z - 1});
+                s.insert({n.x, {n.y, n.z - 1}});
+            }
+        }
+    }
 
-	return 0;
+    return 0;
 }
 </code></pre>
     </div>
@@ -349,7 +296,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-01-28</span>
+    <span class="item-content">2019-04-17</span>
   </p>
   
   <p class="copyright-item">
@@ -364,21 +311,16 @@ int main(){
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/greedy/">Greedy</a>
+          <a href="/codingBlog/tags/bfs/">Bfs</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/codeforces/round440abc/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Round440ABC</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationrounda/">
-            <span class="next-text nav-default">GCJ2017QualificationRoundA</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round514c/">
+            <span class="next-text nav-default">Round514C</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
