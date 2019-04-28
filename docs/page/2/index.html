@@ -55,7 +55,7 @@
 
 
 
-<meta property="og:updated_time" content="2018-01-28T21:34:29&#43;08:00"/>
+<meta property="og:updated_time" content="2018-01-28T21:34:41&#43;08:00"/>
 
 
 
@@ -134,6 +134,50 @@
   <section id="posts" class="posts">
     
     
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/">GCJ2017QualificationRoundB</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-01-28 </span>
+      <div class="post-category">
+          
+            <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
+          
+            <a href="/codingBlog/categories/google-code-jam/"> Google Code Jam </a>
+          
+        </div>
+      <span class="more-meta"> 497 word </span>
+      <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <h2 id="tidy-numbers-https-code-google-com-codejam-contest-3264486-dashboard-s-p1"><a href="https://code.google.com/codejam/contest/3264486/dashboard#s=p1">Tidy Numbers</a></h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>定義一個數 x 是 tidy number 若且唯喏 x 的 digits 成單調遞增（non-descending）。例如 1122334, 379 就是 tidy number，而 635, 5773 就不是。現給定一正整數 N，求 1 ~ N 中最大的 tidy number 是哪個數？</p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>可觀察出一些特性:</p>
+
+<ol>
+<li>若 N 本身就是 tidy，就答案就是 N</li>
+<li>否則，找出前綴最長的單調遞增 P，若 P 的尾數沒有連續一樣的數字，例如 1256XXX，則 P 的最後一位減去 1， P 後面的數字都補上 9，若 P 的尾數有連續一樣的數字了話，則找到最前面第一個一樣的數字減 1 ，剩下後面的數字都補上 9</li>
+<li>最後檢查開頭是否變成 0，若變成 0，則把開頭的 0 拔掉</li>
+</ol>
+
+<p></p>
+    </div>
+    <div class="read-more">
+      <a href="/codingBlog/post/competitiveprogramming/googlecodejam/gcj2017qualificationroundb/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
     
       <article class="post">
   <header class="post-header">

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xor on Coding Blog</title>
+    <link>https://andychen841210.github.io/codingBlog/tags/xor/</link>
+    <description>Recent content in Xor on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Apr 2019 14:52:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://andychen841210.github.io/codingBlog/tags/xor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contest121</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest121/</link>
+      <pubDate>Sun, 28 Apr 2019 14:52:06 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest121/</guid>
+      <description>&lt;h2 id=&#34;contest121-https-atcoder-jp-contests-abc121&#34;&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc121&#34;&gt;Contest121&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;d&#34;&gt;D&lt;/h2&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;XOR 性質題或是規律題&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

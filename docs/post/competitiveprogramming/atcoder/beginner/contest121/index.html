@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Contest123 - Coding Blog</title>
+  <title>Contest121 - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="andychen" />
-  <meta name="description" content="Contest123 D Solution sketch 做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
+  <meta name="description" content="Contest121 D Solution sketch XOR 性質題或是規律題
 
 " />
 
@@ -31,7 +31,7 @@
 <meta name="generator" content="Hugo 0.29" />
 
 
-<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/" />
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest121/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
@@ -49,27 +49,23 @@
 <link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
 <link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
-<meta property="og:title" content="Contest123" />
-<meta property="og:description" content="Contest123
+<meta property="og:title" content="Contest121" />
+<meta property="og:description" content="Contest121
 
 D
 
 Solution sketch
 
-做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
+XOR 性質題或是規律題
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest121/" />
 
 
 
-<meta property="article:published_time" content="2019-04-17T10:34:10&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-17T10:34:10&#43;08:00"/>
-
-
-
-
+<meta property="article:published_time" content="2019-04-28T14:52:06&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-28T14:52:06&#43;08:00"/>
 
 
 
@@ -77,32 +73,36 @@ Solution sketch
 
 
 
-<meta itemprop="name" content="Contest123">
-<meta itemprop="description" content="Contest123
+
+
+
+
+<meta itemprop="name" content="Contest121">
+<meta itemprop="description" content="Contest121
 
 D
 
 Solution sketch
 
-做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
+XOR 性質題或是規律題
 
 ">
 
 
-<meta itemprop="dateModified" content="2019-04-17T10:34:10&#43;08:00" />
-<meta itemprop="wordCount" content="303">
+<meta itemprop="dateModified" content="2019-04-28T14:52:06&#43;08:00" />
+<meta itemprop="wordCount" content="441">
 
 
 
-<meta itemprop="keywords" content="Bfs," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Contest123"/>
-<meta name="twitter:description" content="Contest123
+<meta itemprop="keywords" content="Xor," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Contest121"/>
+<meta name="twitter:description" content="Contest121
 
 D
 
 Solution sketch
 
-做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可
+XOR 性質題或是規律題
 
 "/>
 
@@ -167,10 +167,10 @@ Solution sketch
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Contest123</h1>
+      <h1 class="post-title">Contest121</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-04-17 </span>
+        <span class="post-time"> 2019-04-28 </span>
         <div class="post-category">
             
               <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
@@ -178,7 +178,7 @@ Solution sketch
               <a href="/codingBlog/categories/atcoder/"> AtCoder </a>
             
           </div>
-        <span class="more-meta"> 303 word </span>
+        <span class="more-meta"> 441 word </span>
         <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -194,11 +194,14 @@ Solution sketch
 <ul>
 <li>
 <ul>
-<li><a href="#contest123-https-atcoder-jp-contests-abc123"><a href="https://atcoder.jp/contests/abc123">Contest123</a></a></li>
+<li><a href="#contest121-https-atcoder-jp-contests-abc121"><a href="https://atcoder.jp/contests/abc121">Contest121</a></a></li>
 <li><a href="#d">D</a>
 <ul>
 <li><a href="#solution-sketch">Solution sketch</a></li>
+<li><a href="#做法-1">做法 1</a></li>
 <li><a href="#ac-code">AC code</a></li>
+<li><a href="#作法-2-官方">作法 2 (官方):</a></li>
+<li><a href="#ac-code-1">AC code</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -208,78 +211,116 @@ Solution sketch
 
     
     <div class="post-content">
-      <h2 id="contest123-https-atcoder-jp-contests-abc123"><a href="https://atcoder.jp/contests/abc123">Contest123</a></h2>
+      <h2 id="contest121-https-atcoder-jp-contests-abc121"><a href="https://atcoder.jp/contests/abc121">Contest121</a></h2>
 
 <h2 id="d">D</h2>
 
 <h3 id="solution-sketch">Solution sketch</h3>
 
-<p>做 Bfs 即可，一開始以最大的 sum 作為起點，接著下次的選擇則為 x 換為次大或 y 換為次大或 z 換為次大即可</p>
+<p>XOR 性質題或是規律題</p>
 
 <p></p>
 
+<h3 id="做法-1">做法 1</h3>
+
+<pre><code>0000
+0001
+0010
+0011
+0100
+0101
+0110
+0111
+...
+</code></pre>
+
+<p>會發現最右邊的 bit 是以 2 次為循環，接著的第二個 bit 是以 4 次為循環，以此類推，要注意只有第一個 bit 一次循環是不會歸零的</p>
+
 <h3 id="ac-code">AC code</h3>
 
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+<pre><code>#include &lt;bits/stdc++.h&gt;
 using namespace std;
 
-struct Node{
-    long long int sum;
-    int x, y, z;
+long long int f(long long int x){
+    
+    if (x &lt;= 0)
+        return 0;
 
-    bool operator &lt; (const Node &amp;node) const{
-        return sum &lt; node.sum;
+    long long int dig[40] = {0};
+    for (int i = 1; i &lt; 40; i++){
+        long long int mod = 1LL &lt;&lt; (i + 1);
+        
+        if (x % mod - (mod / 2) + 1 &gt; 0)
+            dig[i] += (x % mod - (mod / 2) + 1) % 2;
     }
-};
+
+    long long int ans = 0;
+    for (int i = 1; i &lt; 40; i++)
+        ans |= (dig[i] &lt;&lt; i);
+    
+    if (((x + 1)/ 2) % 2 == 1)
+        ans |= 1;
+
+    return ans;
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    long long int a, b;
+    cin &gt;&gt; a &gt;&gt; b;
+    
+    cout &lt;&lt; (f(b) ^ f(a - 1)) &lt;&lt; '\n';
+
+    return 0;
+}
+</code></pre>
+
+<h3 id="作法-2-官方">作法 2 (官方):</h3>
+
+<p>$0 \oplus 1 \oplus 2 \oplus 3 \oplus 4 \oplus 5 &hellip;$ = $(0 \oplus 1) \oplus (2 \oplus 3) \oplus (4 \oplus 5) &hellip;$ = $1 \oplus 1 \oplus 1 &hellip;$</p>
+
+<h3 id="ac-code-1">AC code</h3>
+
+<pre><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
     
-    int x, y, z, k;
-    cin &gt;&gt; x &gt;&gt; y &gt;&gt; z &gt;&gt; k;
+    long long int a, b;
+    cin &gt;&gt; a &gt;&gt; b;
 
-    long long int a[2000], b[2000], c[2000];
-    for (int i = 0; i &lt; x; i++)
-        cin &gt;&gt; a[i];
+    if (a == b){
+        cout &lt;&lt; a &lt;&lt; '\n';
+        return 0;
+    }
 
-    for (int i = 0; i &lt; y; i++)
-        cin &gt;&gt; b[i];
-
-    for (int i = 0; i &lt; z; i++)
-        cin &gt;&gt; c[i];
-
-    sort(a, a + x);
-    sort(b, b + y);
-    sort(c, c + z);
-    
-    priority_queue&lt;Node&gt; pq;
-    set&lt;pair&lt;int, pair&lt;int,int&gt;&gt; &gt; s;
-    pq.push({a[x - 1] + b[y - 1] + c[z - 1], x - 1, y - 1, z - 1});
-    s.insert({x - 1, {y - 1, z - 1}});
-    
-    for (int i = 0; i &lt; k; i++){
-        Node n = pq.top(); pq.pop();
-        cout &lt;&lt; n.sum &lt;&lt; '\n';
-
-        if (n.x &gt; 0){
-            if (s.find({n.x - 1, {n.y, n.z}}) == s.end()){
-                pq.push({a[n.x - 1] + b[n.y] + c[n.z], n.x - 1, n.y, n.z});
-                s.insert({n.x - 1, {n.y, n.z}});
-            }
-        }
-        if (n.y &gt; 0){
-            if (s.find({n.x, {n.y - 1, n.z}}) == s.end()){
-                pq.push({a[n.x] + b[n.y - 1] + c[n.z], n.x, n.y - 1, n.z});
-                s.insert({n.x, {n.y - 1, n.z}});
-            }
-        }
-        if (n.z &gt; 0){
-            if (s.find({n.x, {n.y, n.z - 1}}) == s.end()){
-                pq.push({a[n.x] + b[n.y] + c[n.z - 1], n.x, n.y, n.z - 1});
-                s.insert({n.x, {n.y, n.z - 1}});
-            }
-        }
+    if (a % 2 == 0 &amp;&amp; b % 2 == 0){
+        if (((b - a) / 2) % 2 == 0)
+            cout &lt;&lt; b &lt;&lt; '\n';
+        else
+            cout &lt;&lt; (b ^ 1LL) &lt;&lt; '\n';
+    }
+    else if (a % 2 == 0 &amp;&amp; b % 2 == 1){
+        if (((b - a + 1) / 2) % 2 == 0)
+            cout &lt;&lt; 0 &lt;&lt; '\n';
+        else
+            cout &lt;&lt; 1 &lt;&lt; '\n';
+    }
+    else if (a % 2 == 1 &amp;&amp; b % 2 == 0){
+        if (((b - a - 1) / 2) % 2 == 0)
+            cout &lt;&lt; (a ^ b) &lt;&lt; '\n';
+        else
+            cout &lt;&lt; (a ^ b ^ 1LL) &lt;&lt; '\n';
+    }
+    else if (a % 2 == 1 &amp;&amp; b % 2 == 1){
+        if (((b - a) / 2) % 2 == 0)
+            cout &lt;&lt; a &lt;&lt; '\n';
+        else
+            cout &lt;&lt; (a ^ 1LL) &lt;&lt; '\n';
     }
 
     return 0;
@@ -296,7 +337,7 @@ int main(){
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2019-04-17</span>
+    <span class="item-content">2019-04-28</span>
   </p>
   
   <p class="copyright-item">
@@ -311,21 +352,16 @@ int main(){
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/codingBlog/tags/bfs/">Bfs</a>
+          <a href="/codingBlog/tags/xor/">Xor</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/codingBlog/post/competitiveprogramming/atcoder/beginner/contest121/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Contest121</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round514c/">
-            <span class="next-text nav-default">Round514C</span>
+          <a class="next" href="/codingBlog/post/competitiveprogramming/atcoder/beginner/contest123/">
+            <span class="next-text nav-default">Contest123</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
