@@ -1,12 +1,12 @@
 ---
-title: "Contest123"
+title: "AtCoder ABC123"
 date: 2019-04-17T10:34:10+08:00
 draft: false
 lastmod: 2019-04-17T10:34:10+08:00
 tags: ["Bfs"]
 categories: ["Competitive Programming", "AtCoder"]
 ---
-## [Contest123](https://atcoder.jp/contests/abc123)
+## [AtCoder ABC123](https://atcoder.jp/contests/abc123)
 
 ## D
 

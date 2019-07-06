@@ -1,12 +1,12 @@
 ---
-title: "Contest121"
+title: "AtCoder ABC121"
 date: 2019-04-28T14:52:06+08:00
 draft: false
 lastmod: 2019-04-28T14:52:06+08:00
 tags: ["Xor"]
 categories: ["Competitive Programming", "AtCoder"]
 ---
-## [Contest121](https://atcoder.jp/contests/abc121)
+## [AtCoder ABC121](https://atcoder.jp/contests/abc121)
 
 ## D
 
