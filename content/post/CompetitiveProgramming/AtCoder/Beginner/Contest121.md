@@ -32,7 +32,7 @@ XOR 性質題或是規律題
 會發現最右邊的 bit 是以 2 次為循環，接著的第二個 bit 是以 4 次為循環，以此類推，要注意只有第一個 bit 一次循環是不會歸零的
 
 ### AC code
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -77,7 +77,7 @@ int main(){
 $0 \oplus 1 \oplus 2 \oplus 3 \oplus 4 \oplus 5 ...$ = $(0 \oplus 1) \oplus (2 \oplus 3) \oplus (4 \oplus 5) ...$ = $1 \oplus 1 \oplus 1 ...$
 
 ### AC code
-```
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 

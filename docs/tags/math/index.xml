@@ -6,10 +6,33 @@
     <description>Recent content in Math on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Oct 2018 23:27:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 22:35:08 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AtCoder ABC127</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest127/</link>
+      <pubDate>Sat, 06 Jul 2019 22:35:08 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/atcoder/beginner/contest127/</guid>
+      <description>&lt;h2 id=&#34;atcoder-abc127-https-atcoder-jp-contests-abc127&#34;&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc127&#34;&gt;AtCoder ABC127&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;e&#34;&gt;E&lt;/h2&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;x, y 座標對答案貢獻是獨立的，因此可以分開來計算&lt;/p&gt;
+
+&lt;p&gt;接著枚舉橫坐標的差值 d，固定兩個橫坐標差值為 d 的點，會有 (n - d) * $ m^2 $ 個，因此差值為 d 的貢獻總共有 (n - d) * $ m^2 $ * d&lt;/p&gt;
+
+&lt;p&gt;同理枚舉縱座標，(m - d) * $ n^2 $ * d&lt;/p&gt;
+
+&lt;p&gt;最後還要乘上 $ C \binom{n * m - 2}{k - 2} $ 就是答案了，這個式子表示固定兩個點之後，剩下的點中選 k - 2 個，表示這固定兩點總共可以貢獻的次數，由於 n * m 太大且在 mod p 底下，因此使用 lucas 來計算&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Round514C</title>

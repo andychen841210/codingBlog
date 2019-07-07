@@ -55,7 +55,7 @@
 
 
 
-<meta property="og:updated_time" content="2019-04-28T14:52:06&#43;08:00"/>
+<meta property="og:updated_time" content="2019-07-06T22:35:08&#43;08:00"/>
 
 
 
@@ -134,6 +134,46 @@
   <section id="posts" class="posts">
     
     
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/codingBlog/post/competitiveprogramming/atcoder/beginner/contest127/">AtCoder ABC127</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-07-06 </span>
+      <div class="post-category">
+          
+            <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
+          
+        </div>
+      <span class="more-meta"> 882 word </span>
+      <span class="more-meta"> 2 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <h2 id="atcoder-abc127-https-atcoder-jp-contests-abc127"><a href="https://atcoder.jp/contests/abc127">AtCoder ABC127</a></h2>
+
+<h2 id="e">E</h2>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>x, y 座標對答案貢獻是獨立的，因此可以分開來計算</p>
+
+<p>接著枚舉橫坐標的差值 d，固定兩個橫坐標差值為 d 的點，會有 (n - d) * $ m^2 $ 個，因此差值為 d 的貢獻總共有 (n - d) * $ m^2 $ * d</p>
+
+<p>同理枚舉縱座標，(m - d) * $ n^2 $ * d</p>
+
+<p>最後還要乘上 $ C \binom{n * m - 2}{k - 2} $ 就是答案了，這個式子表示固定兩個點之後，剩下的點中選 k - 2 個，表示這固定兩點總共可以貢獻的次數，由於 n * m 太大且在 mod p 底下，因此使用 lucas 來計算</p>
+
+<p></p>
+    </div>
+    <div class="read-more">
+      <a href="/codingBlog/post/competitiveprogramming/atcoder/beginner/contest127/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
     
       <article class="post">
   <header class="post-header">
@@ -498,48 +538,6 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
     </div>
     <div class="read-more">
       <a href="/codingBlog/post/competitiveprogramming/codeforces/round441abcd/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/codingBlog/post/competitiveprogramming/codeforces/round440abc/">Round440ABC</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018-03-22 </span>
-      <div class="post-category">
-          
-            <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
-          
-            <a href="/codingBlog/categories/codeforces/"> Codeforces </a>
-          
-            <a href="/codingBlog/categories/division-2/"> Division 2 </a>
-          
-        </div>
-      <span class="more-meta"> 979 word </span>
-      <span class="more-meta"> 2 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h2 id="codeforces-round440-division-2-http-codeforces-com-contest-872"><a href="http://codeforces.com/contest/872">Codeforces Round440 Division 2</a></h2>
-
-<h2 id="a">A</h2>
-
-<h3 id="abridge-problem-statement">Abridge problem statement</h3>
-
-<p>給定兩個非零 digit 的 list，求出最小的 pretty number，pretty number 定義為至少一個 digit 從第一個 list，至少一個 digit 從第二個 list</p>
-
-<h3 id="solution-sketch">Solution sketch</h3>
-
-<p>先檢查兩個 list 是否有重複的數字，若有了話找出最小的個位數就是答案，否則取兩個 list 當中個別最小的值拿出來，較小的擺十位數，較大的擺在個位數就是答案</p>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/codingBlog/post/competitiveprogramming/codeforces/round440abc/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
