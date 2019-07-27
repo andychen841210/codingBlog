@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Apr 2019 14:52:06 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 22:35:08 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Atcoder</title>
       <link>https://andychen841210.github.io/codingBlog/categories/atcoder/</link>
-      <pubDate>Sun, 28 Apr 2019 14:52:06 +0800</pubDate>
+      <pubDate>Sat, 06 Jul 2019 22:35:08 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/categories/atcoder/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Codeforces</title>
       <link>https://andychen841210.github.io/codingBlog/categories/codeforces/</link>
-      <pubDate>Tue, 23 Oct 2018 23:27:30 +0800</pubDate>
+      <pubDate>Sat, 27 Jul 2019 19:51:12 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/categories/codeforces/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>Competitive Programming</title>
       <link>https://andychen841210.github.io/codingBlog/categories/competitive-programming/</link>
-      <pubDate>Sat, 06 Jul 2019 22:35:08 +0800</pubDate>
+      <pubDate>Sat, 27 Jul 2019 19:51:12 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/categories/competitive-programming/</guid>
       <description></description>
@@ -44,6 +44,15 @@
       <pubDate>Tue, 23 Oct 2018 23:27:30 +0800</pubDate>
       
       <guid>https://andychen841210.github.io/codingBlog/categories/division-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Division 3</title>
+      <link>https://andychen841210.github.io/codingBlog/categories/division-3/</link>
+      <pubDate>Sat, 27 Jul 2019 19:51:12 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/categories/division-3/</guid>
       <description></description>
     </item>
     

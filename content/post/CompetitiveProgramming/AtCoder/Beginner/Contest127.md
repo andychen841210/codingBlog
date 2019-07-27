@@ -4,7 +4,7 @@ date: 2019-07-06T22:35:08+08:00
 draft: false
 lastmod: 2019-07-06T22:35:08+08:00
 tags: ["Math"]
-categories: ["Competitive Programming"]
+categories: ["Competitive Programming", "AtCoder"]
 ---
 ## [AtCoder ABC127](https://atcoder.jp/contests/abc127)
 

@@ -6,10 +6,31 @@
     <description>Recent content in Competitive Programming on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jul 2019 22:35:08 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jul 2019 19:51:12 +0800</lastBuildDate>
     
 	<atom:link href="https://andychen841210.github.io/codingBlog/categories/competitive-programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Round560F</title>
+      <link>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round560f/</link>
+      <pubDate>Sat, 27 Jul 2019 19:51:12 +0800</pubDate>
+      
+      <guid>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round560f/</guid>
+      <description>&lt;h2 id=&#34;codeforces-round560-division-3-https-codeforces-com-contest-1165&#34;&gt;&lt;a href=&#34;https://codeforces.com/contest/1165&#34;&gt;Codeforces Round560 Division 3&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;f&#34;&gt;F&lt;/h2&gt;
+
+&lt;h3 id=&#34;solution-sketch&#34;&gt;Solution sketch&lt;/h3&gt;
+
+&lt;p&gt;binary search 搜答案需要幾天，然後 check function 需要檢查這個天數內是否可行，
+由於同一種物品可能在很多天進行打折，那麼要在哪天購買才是最好的呢？&lt;/p&gt;
+
+&lt;p&gt;由於一天可以購買的數量沒有限制，那其實只要在那種物品有打折的最後一天一次進行購買即可，
+因此只要分別紀錄每個物品最接近這次搜尋答案的日子，接著檢查這次搜尋的答案是否可行即可&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>AtCoder ABC127</title>
