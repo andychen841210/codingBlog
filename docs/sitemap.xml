@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/edu60de/</loc>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/round560f/</loc>
     <lastmod>2019-07-27T19:51:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,21 +172,21 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/categories/codeforces/</loc>
-    <lastmod>2019-07-27T19:51:12+08:00</lastmod>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/</loc>
-    <lastmod>2019-07-27T19:51:12+08:00</lastmod>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/categories/competitive-programming/</loc>
-    <lastmod>2019-07-27T19:51:12+08:00</lastmod>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -207,7 +214,21 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/tags/dp/</loc>
-    <lastmod>2018-03-30T22:51:22+08:00</lastmod>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/categories/educational/</loc>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/fast-pow/</loc>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -241,6 +262,13 @@
   </url>
   
   <url>
+    <loc>https://andychen841210.github.io/codingBlog/tags/matrices/</loc>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://andychen841210.github.io/codingBlog/categories/poj/</loc>
     <lastmod>2018-01-28T21:32:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,7 +277,7 @@
   
   <url>
     <loc>https://andychen841210.github.io/codingBlog/post/</loc>
-    <lastmod>2019-07-27T19:51:12+08:00</lastmod>
+    <lastmod>2019-08-27T22:43:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

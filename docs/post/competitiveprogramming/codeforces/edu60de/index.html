@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Edu60DE - Coding Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="andychen" />
+  <meta name="description" content="Codeforces Educational 60 D Abridge problem statement 給定一堆個魔法寶石一字排開，每個魔法寶石可以變成 m 個普通的寶石，問說構造出長度為 n 的寶石有幾種方法
+
+" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+<meta name="google-site-verification" content="FuwyG1La_DaZH-n3M2NtQYJYF5GYtRVtthFpCVWuoaU" />
+
+
+<meta name="generator" content="Hugo 0.29" />
+
+
+<link rel="canonical" href="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/edu60de/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/codingBlog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/codingBlog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/codingBlog/favicon-16x16.png">
+<link rel="icon" href="/codingBlog/favicon.ico" />
+<link rel="manifest" href="/codingBlog/manifest.json">
+<link rel="mask-icon" href="/codingBlog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/codingBlog/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="Edu60DE" />
+<meta property="og:description" content="Codeforces Educational 60
+
+D
+
+Abridge problem statement
+
+給定一堆個魔法寶石一字排開，每個魔法寶石可以變成 m 個普通的寶石，問說構造出長度為 n 的寶石有幾種方法
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://andychen841210.github.io/codingBlog/post/competitiveprogramming/codeforces/edu60de/" />
+
+
+
+<meta property="article:published_time" content="2019-08-27T22:43:23&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-27T22:43:23&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Edu60DE">
+<meta itemprop="description" content="Codeforces Educational 60
+
+D
+
+Abridge problem statement
+
+給定一堆個魔法寶石一字排開，每個魔法寶石可以變成 m 個普通的寶石，問說構造出長度為 n 的寶石有幾種方法
+
+">
+
+
+<meta itemprop="dateModified" content="2019-08-27T22:43:23&#43;08:00" />
+<meta itemprop="wordCount" content="906">
+
+
+
+<meta itemprop="keywords" content="Dp,Matrices,Fast Pow," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Edu60DE"/>
+<meta name="twitter:description" content="Codeforces Educational 60
+
+D
+
+Abridge problem statement
+
+給定一堆個魔法寶石一字排開，每個魔法寶石可以變成 m 個普通的寶石，問說構造出長度為 n 的寶石有幾種方法
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/codingBlog/" class="logo">Coding Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/codingBlog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/codingBlog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/codingBlog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/codingBlog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/codingBlog/" class="logo">Coding Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codingBlog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Edu60DE</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-27 </span>
+        <div class="post-category">
+            
+              <a href="/codingBlog/categories/competitive-programming/"> Competitive Programming </a>
+            
+              <a href="/codingBlog/categories/codeforces/"> Codeforces </a>
+            
+              <a href="/codingBlog/categories/educational/"> Educational </a>
+            
+          </div>
+        <span class="more-meta"> 906 word </span>
+        <span class="more-meta"> 2 min read </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#codeforces-educational-60-https-codeforces-com-contest-1117"><a href="https://codeforces.com/contest/1117">Codeforces Educational 60</a></a></li>
+<li><a href="#d">D</a>
+<ul>
+<li><a href="#abridge-problem-statement">Abridge problem statement</a></li>
+<li><a href="#solution-sketch">Solution sketch</a></li>
+<li><a href="#ac-code">AC code</a></li>
+</ul></li>
+<li><a href="#e">E</a>
+<ul>
+<li><a href="#abridge-problem-statement-1">Abridge problem statement</a></li>
+<li><a href="#solution-sketch-1">Solution sketch</a></li>
+<li><a href="#ac-code-1">AC code</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="codeforces-educational-60-https-codeforces-com-contest-1117"><a href="https://codeforces.com/contest/1117">Codeforces Educational 60</a></h2>
+
+<h2 id="d">D</h2>
+
+<h3 id="abridge-problem-statement">Abridge problem statement</h3>
+
+<p>給定一堆個魔法寶石一字排開，每個魔法寶石可以變成 m 個普通的寶石，問說構造出長度為 n 的寶石有幾種方法</p>
+
+<p></p>
+
+<h3 id="solution-sketch">Solution sketch</h3>
+
+<p>如果用遞推的方法，則轉移方程式可以寫成</p>
+
+<p>$$\begin{aligned}
+    dp[n] = dp[n - 1] + dp[n - m]
+\end{aligned}$$</p>
+
+<p>表示為長度為 n 的寶石排列數，可以由 n - 1 寶石的排列中添加一個普通的寶石，以及在 n - m 個寶石中，添加一個魔法寶石
+可以將上面的式子寫成下面的形式</p>
+
+<p>$$
+\begin{bmatrix}
+    dp_n \\
+    dp_{n-1} \\<br />
+    \vdots \\
+    dp_{n-m+1}
+\end{bmatrix} =
+\begin{bmatrix}
+    1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\
+    1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\
+    \vdots &amp; \vdots &amp; \vdots &amp; \cdots &amp; \vdots &amp; \vdots \\
+    0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+    dp_{n-1} \\
+    dp_{n-2} \\<br />
+    \vdots \\
+    dp_{n-m}
+\end{bmatrix}
+$$</p>
+
+<p>那麼計算 $dp_n$ 則利用矩陣快速冪的方法來計算即可</p>
+
+<p>$$
+\begin{bmatrix}
+    dp_n \\
+    dp_{n-1} \\<br />
+    \vdots \\
+    dp_{n-m+1}
+\end{bmatrix} =
+\begin{bmatrix}
+    1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \\
+    1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\
+    \vdots &amp; \vdots &amp; \vdots &amp; \cdots &amp; \vdots &amp; \vdots \\
+    0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0
+\end{bmatrix}^{n-m+1}
+\begin{bmatrix}
+    dp_{m-1} \\
+    dp_{m-2} \\<br />
+    \vdots \\
+    dp_0
+\end{bmatrix}
+$$</p>
+
+<h3 id="ac-code">AC code</h3>
+
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+typedef vector&lt;long long&gt; vec;
+typedef vector&lt;vec&gt; mat;
+
+const int MOD = 1e9 + 7;
+
+mat mul(mat &amp;A, mat &amp;B){
+    int n = A.size(), m = B[0].size(), mm = B.size();
+    mat res(n, vec(m));
+    for (int i = 0; i &lt; n; i++){
+        for (int j = 0; j &lt; m; j++){
+            for (int k = 0; k &lt; mm; k++){
+                res[i][j] = (res[i][j] + (A[i][k] * B[k][j]) % MOD) % MOD;
+            }
+        }
+    }
+
+    return res;
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    
+    long long n, m;
+    cin &gt;&gt; n &gt;&gt; m;
+
+    mat B(m, vec(m));
+    B[0][0] = B[0][m - 1] = 1;
+    for (int i = 1; i &lt; m; i++)
+        B[i][i - 1] = 1;
+    
+    mat A(m, vec(m));
+    for (int i = 0; i &lt; m; i++)
+        A[i][i] = 1;
+    
+    if (n &lt; m){
+        cout &lt;&lt; 1 &lt;&lt; '\n';
+        return 0;
+    }
+
+    long long x = n - m + 1;
+    while(x){
+        if (x &amp; 1)
+            A = mul(A, B);
+        B = mul(B, B);
+        x &gt;&gt;= 1;
+    }
+    
+    long long ans = 0;
+    for (int i = 0; i &lt; m; i++)
+        ans = (ans + A[0][i]) % MOD;
+
+    cout &lt;&lt; ans &lt;&lt; '\n';
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="e">E</h2>
+
+<h3 id="abridge-problem-statement-1">Abridge problem statement</h3>
+
+<p>給定一個長度為 n 字串，這個字串經過了幾次交換而成的，那現在需要你做出最多三次詢問，將字串還原成原本的字串，
+而你在詢問的時候是給定一個長度為 n 的字串，他會用他的交換的順序，把你的字串照這個順序做一次並回傳給你</p>
+
+<h3 id="solution-sketch-1">Solution sketch</h3>
+
+<p>詢問三次分別為</p>
+
+<ol>
+<li><p>26 * 26 個 a + 26 * 26 個 b + &hellip; + 26 * 26 個 z</p></li>
+
+<li><p>26 個 a + 26 個 b + &hellip; + 26 個 z</p></li>
+
+<li><p>abc&hellip;zabc&hellip;z&hellip;abc&hellip;z</p></li>
+</ol>
+
+<p>第一次詢問完就可以知道個別的字母來自哪個區間，第二次跟第三次同理，只是把範圍在縮得更小，
+可以把它想成是位置來源 $x = a * 26^2 + b * 26 + c$</p>
+
+<h3 id="ac-code-1">AC code</h3>
+
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    
+    string s;
+    cin &gt;&gt; s;
+
+    string ss[3];
+    int len = s.length();
+    vector&lt;int&gt; origin_idx(len);
+
+    for (int i = 0; i &lt; 3; i++){
+        for (int j = 0; j &lt; len; j++){
+            if (i == 0)
+                ss[i] += 'a' + j % 26;
+            else if (i == 1)
+                ss[i] += 'a' + (j / 26) % 26;
+            else if (i == 2)
+                ss[i] += 'a' + (j / 26 / 26) % 26;
+        }
+
+        cout &lt;&lt; &quot;? &quot; &lt;&lt; ss[i] &lt;&lt; endl;
+
+        string inp;
+        cin &gt;&gt; inp;
+        for (int j = 0; j &lt; len; j++){
+            if (i == 0)
+                origin_idx[j] += inp[j] - 'a';
+            else if (i == 1)
+                origin_idx[j] += (inp[j] - 'a') * 26;
+            else if (i == 2)
+                origin_idx[j] += (inp[j] - 'a') * 26 * 26;
+        }
+    }
+
+    string ans(len, ' ');
+    for (int i = 0; i &lt; len; i++)
+        ans[origin_idx[i]] = s[i];
+
+    cout &lt;&lt; &quot;! &quot; &lt;&lt; ans &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">andychen</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2019-08-27</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/codingBlog/tags/dp/">Dp</a>
+          
+          <a href="/codingBlog/tags/matrices/">Matrices</a>
+          
+          <a href="/codingBlog/tags/fast-pow/">Fast Pow</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/codingBlog/post/competitiveprogramming/codeforces/round560f/">
+            <span class="next-text nav-default">Round560F</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/andychen841210?tab=repositories" class="iconfont icon-github" title="github"></a>
+  <a href="https://andychen841210.github.io/codingBlog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">andychen</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/codingBlog/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/codingBlog/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/codingBlog/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/codingBlog/dist/even.min.js?v=2.7.2"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>
